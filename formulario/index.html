@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Título aqui</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<form>
+			<fieldset>
+				<legend>FORMULÁRIO</legend>
+
+				<!--Campo de nome-->
+				<div><input type="text" name="nome" placeholder="Digite o seu nome"></div>
+				<!--Campo de email-->
+				<div><input type="text" name="email" placeholder="Digite o seu email"></div>
+				<!--Idade-->
+				<div>
+					<select name="lista">
+						<option disabled selected>Qual a sua idade?</option>
+						<option value="0118">1-18</option>
+						<option value="1940">19-40</option>
+						<option value="41pp">41+</option>
+					</select>
+				</div>
+
+				<!-- Local de moradia -->
+				<h2>Qual sua cidade?</h2>
+				<div class="input">
+					<input type="radio" name="cidade" value="Manaus"><span> Manaus</span>
+					</br>
+					<input type="radio" name="cidade" value="São Paulo"><span> São Paulo</span>
+					</br>
+					<input type="radio" name="cidade" value="Rio de Janeiro"><span> Rio de Janeiro</span>
+				</div>
+
+				<!-- Habitos alimentares -->
+				<h2>O que você costuma comer?</h2>
+				<div class="input">
+					<input type="checkbox" name="cidade[]" value="Frutas"><span> Frutas</span>
+					</br>
+					<input type="checkbox" name="cidade[]" value="Fast Food"><span> Fast Food</span>
+					</br>
+					<input type="checkbox" name="cidade[]" value="Carnes"><span> Carnes</span>
+				</div>
+
+				<!--Area para comentários adicionais-->
+				<div>
+					<textarea name="Comentario" placeholder="Comente um pouco sobre você"></textarea>
+				</div>
+
+				<!-- Anexar arquivos -->
+				<div>
+					<input id="file" type="file" name="file" />
+					<label class="attach" for="file">Anexar arquivo</label>
+				</div>
+
+				<!--Botão de enviar-->
+				<div>
+					<input type="submit" name="acao" value="Enviar formulário">
+				</div>
+
+			</fieldset>
+		</form>
+	</body>
+</html>

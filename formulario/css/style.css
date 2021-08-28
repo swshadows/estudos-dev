@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+	background-color: black;
+}
+
+form{
+	text-align: center;
+	width: 96%;
+	max-height: 600px;
+	margin: 0 auto;
+}
+
+form fieldset{
+	padding: 0 50px;
+	border: 2px dotted gray;
+}
+
+form legend{
+	font-size: 20px;
+	color: gray;
+}
+
+form input[type=text]{
+	font-family: tahoma;
+	display: inline-block;
+	margin-top: 5px;
+	width: 80%;
+	padding: 10px 0;
+	border: 1px solid gray;
+}
+form label.attach{
+	width: 250px;
+	height: 40px;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	background-color: gray;
+	line-height: 40px;
+	margin: 10px 0;
+	font-family: tahoma;
+	font-size: 20px;
+}
+
+form input[type=file]{
+	display: none;
+}
+
+form input[type=text]:focus, form select:focus, form textarea: focus{
+	outline: 0;
+}
+
+form select option{
+	color: purple;
+}
+
+form select{
+	font-family: tahoma;
+	width: calc(80% + 5px);
+	margin-top: 5px;
+	padding: 10px 0;
+	display: inline-block;
+}
+
+form h2{
+	margin-top: 10px;
+	color: white;
+}
+
+form input[type=submit]{
+	margin: 10px 0;
+	font-size: 20px;
+	border: 2px solid gray;
+	color: white;
+	width: 250px;
+	height: 40px;
+	background-color: gray;
+	cursor: pointer;
+}
+
+form textarea{
+	font-family: tahoma;
+	border: 1px dotted gray;
+	margin-top: 10px;
+	resize: none;
+	width: 80%;
+	height: 80%;
+	padding: 10px 0;
+}
+
+.input{
+	padding: 10px;
+	color: white;
+	display: inline-block;
+	text-align: left;
+}
