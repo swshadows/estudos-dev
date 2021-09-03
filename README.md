@@ -1,17 +1,21 @@
-# copia-google
+
+# Curso Front-End
+Repositório para códigos relacionados ao curso de Front-End que estou realizando
+
+### copia-google
 Cópia da landing page do Google, feita sozinho;
 
-# copia-starbucks
+### copia-starbucks
 Modelo de landing page do Starbucks, feita acompanhando o curso;
 
-# fontes
+### fontes
 Teste de fontes, importação e uso;
 
-# formulario
+### formulario
 Modelo de página de formulário;
 
-# galeria-responsiva
+### galeria-responsiva
 Testando responsivo com imagens;
 
-# meu-site
+### meu-site
 Modelo de site próprio, 1º projeto prático do curso, utilizando todos os conhecimentos adquiridos até o momento;
