@@ -55,7 +55,7 @@ form input[type=text]:focus, form select:focus, form textarea: focus{
 }
 
 form select option{
-	color: purple;
+	color: black;
 }
 
 form select{
