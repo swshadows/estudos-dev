@@ -1,21 +1,23 @@
+# Estudos Web Dev
+## *Repositório para meus estudos relacionados ao desenvolvimento Web*
 
-# Curso Front-End
-Repositório para códigos relacionados ao curso de Front-End que estou realizando
+# facebook-login
+- Landing page do Facebook (HTML + CSS)
 
-### copia-google
-Cópia da landing page do Google, feita sozinho;
+# fontes
+- Teste de importação de fontes (HTML + CSS)
 
-### copia-starbucks
-Modelo de landing page do Starbucks, feita acompanhando o curso;
+# formulário
+- Formulário básico (HTML + CSS)
 
-### fontes
-Teste de fontes, importação e uso;
+# galeria-responsiva
+- Teste de galeria responsiva (HTML + CSS)
 
-### formulario
-Modelo de página de formulário;
+# google
+- Landing page do Google Pesquisas (HTML + CSS)
 
-### galeria-responsiva
-Testando responsivo com imagens;
+# meu-site
+- Teste de site de registro pessoal (HTML + CSS)
 
-### meu-site
-Modelo de site próprio, 1º projeto prático do curso, utilizando todos os conhecimentos adquiridos até o momento;
+# starbucks
+- Landing page do Starbucks (HTML + CSS)
