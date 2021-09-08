@@ -1,25 +1,16 @@
 ## *Repositório para meus estudos relacionados ao desenvolvimento Web*
 
-### facebook-login
-- Landing page do Facebook (HTML + CSS)
+### html-basico
+- Testes iniciais com HTML (HyperText Markup Language)
 
-###  fontes
-- Teste de importação de fontes (HTML + CSS)
+### css-basico
+- Testes e práticas iniciais com CSS (Cascading Style Sheets)
 
-###  formulário
-- Formulário básico (HTML + CSS)
-
-###  galeria-responsiva
-- Teste de galeria responsiva (HTML + CSS)
-
-###  google
-- Landing page do Google Pesquisas (HTML + CSS)
-
-###  html-basico
-- Página de testes de HTML (HTML)
-
-###  meu-site
-- Teste de site de registro pessoal (HTML + CSS)
-
-###  starbucks
-- Landing page do Starbucks (HTML + CSS)
+### projetos
+- Pasta com projetos práticos desenvolvidos
+```
+facebook-login:   Landing page do Facebook (HTML + CSS)
+google-pesquisa:  Landing page do Google Pesquisa (HTML + CSS)
+meu-site:         Landing page de site básico (HTML + CSS)
+starbucks:        Landing page do Starbucks (HTML + CSS)
+```

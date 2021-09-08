@@ -1,0 +1,114 @@
+#title{
+    color: yellow;
+}
+
+.paragrafos{
+    color: red;
+    background: url(../images/bg.jpg) center/cover no-repeat fixed;
+}
+
+.text2{
+    color: blue;
+}
+
+#cm{
+    background-color: blue;
+    width: 10cm;
+    height: 5cm;
+}
+
+#mm{
+    background-color: red;
+    width: 10mm;
+    height: 5mm;
+}
+
+#in{
+    background-color: yellow;
+    width: 10in;
+    height: 5in;
+}
+
+#px{
+    background-color: orange;
+    width: 10px;
+    height: 5px;
+}
+
+#pt{
+    background-color: green;
+    width: 10pt;
+    height: 5pt;
+}
+
+#pc{
+    background-color: black;
+    width: 10pc;
+    height: 5pc;
+}
+
+.linered{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}
+
+.textrandom{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid green;
+}
+
+.fonttest{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border: 1px solid red;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* a:active{
+    background-color: white;
+    color: purple;
+} */
+
+a:hover{
+    color: white;
+    background-color: red;
+    border: 1px solid green;
+}
+
+ul{
+    list-style-image: url(../images/check.png);
+    list-style-position: inside;
+    margin: 0px;
+    padding: 5px;
+    background-color: #63f;
+}
+
+ol{
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    margin: 0px;
+    padding: 5px;
+    background-color: #3f0;
+}
+
+li{
+    border: 1px dashed black;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
