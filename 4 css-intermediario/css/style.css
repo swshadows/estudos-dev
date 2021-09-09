@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text1 p{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: red;
+    display: inline-block;
+    margin: 10px;
+}
+
+.text2{
+    border: 2px dashed red;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.divfloat1{
+    border: 2px solid black;
+    background-color: #b425f2;
+    width: 50%;
+    overflow: auto;
+}
+
+img{
+    float: left;
+    width: 20%;
+}
+
+ul{
+    list-style: none;
+}
+
+.menufloat li{
+    border: 2px solid red;
+    float: left;
+    background-color: green;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+div.card{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.cardcontent1{
+    background-color: blue;
+    line-height: 100px;
+}
+
+.cardcontent2{
+    position: absolute;
+    background-color: orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cardcontent3{
+    float: left;
+    padding: 50px 50px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.responsive1{
+    background-color: gray;
+    margin: 10px auto;
+    height: 200px;
+    width: 50%;
+    position: relative;
+}
+
+.responsivetext1{
+    font-size: 2vw;
+    overflow: auto;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    height: 90%;
+    width: 50%;
+}
+
+.mediaheader1{
+    overflow: hidden;
+    background-color: #b33f00;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.medialogo1{
+    float: left;
+    color: white;
+}
+
+.mediamenu1{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+.mediamenu1 li{
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 700px) {
+    .medialogo1{
+        float: none;
+        text-align: center;
+    }
+    
+    .mediamenu1{
+        margin-top: 10px;
+        float: none;
+        text-align: center;
+    }
+    
+    .mediamenu1 li{
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}

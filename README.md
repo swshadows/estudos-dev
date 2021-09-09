@@ -6,6 +6,12 @@
 ### css-basico
 - Testes e práticas iniciais com CSS (Cascading Style Sheets)
 
+### html-intermediario
+- Testes e práticas com HTML em nivel intermediário, como forms, inputs e tags semânticas
+
+### css-intermediario
+- Testes e práticas intermediárias com CSS em nivel intermeriário, como media queries e responsividade
+
 ### projetos
 - Pasta com projetos práticos desenvolvidos
 ```
