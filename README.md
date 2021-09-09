@@ -1,7 +1,7 @@
 ## *Repositório para meus estudos relacionados ao desenvolvimento Web*
 
 ### html-basico
-- Testes iniciais com HTML (HyperText Markup Language)
+- Testes e práticas iniciais com HTML (HyperText Markup Language)
 
 ### css-basico
 - Testes e práticas iniciais com CSS (Cascading Style Sheets)
