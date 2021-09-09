@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="iso8859-1">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
@@ -35,12 +35,12 @@
     <section class="main">
         <div class="center">
             <div class="img-pessoas">
-                <h3>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
+                <h3>O Facebook ajuda vocÃª a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
                 <img src="images/img1.png" alt="">
             </div>
             <div class="abrir-conta">
                 <h2>Abra uma conta</h2>
-                <h3>É rápido e fácil.</h3>
+                <h3>Ã‰ rÃ¡pido e fÃ¡cil.</h3>
                 <form action="" class="criar-conta">
                     <div class="w50">
                         <input type="text" placeholder="Nome" name="" id="">
@@ -56,17 +56,11 @@
                     </div>
                     <div class="w100">
                         <h3>Data de Nascimento</h3>
-                        <select name="nascimento-dia" id="data" class="nascimento">
-                            <?php
-                                for ($i=1; $i <= 31 ; $i++) {
-                            ?>
-                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                            <?php } ?>
-                        </select>
+                        <input class="nascimento" type="number" min="1" max="31">
                         <select name="nascimento-mes" id="data" class="nascimento">
                             <option value="1">Janeiro</option>
                             <option value="2">Fevereiro</option>
-                            <option value="3">Março</option>
+                            <option value="3">MarÃ§o</option>
                             <option value="4">Abril</option>
                             <option value="5">Maio</option>
                             <option value="6">Junho</option>
@@ -77,16 +71,10 @@
                             <option value="11">Novembro</option>
                             <option value="12">Dezembro</option>
                         </select>
-                        <select name="nascimento-ano" id="data" class="nascimento">
-                            <?php
-                                for ($i=1940; $i <= 2002 ; $i++) {
-                            ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                            <?php } ?>
-                        </select>
+                        <input class="nascimento-ano" type="number" min="1990" max="2021">
                     </div>
                     <div class="w100">
-                        <h3>Gênero</h3>
+                        <h3>GÃªnero</h3>
                         <div class="input-radio">
                             <input type="radio" value="masculino" name="sexo" id="">
                             <label for="">Feminino</label>
@@ -110,10 +98,10 @@
         <div class="center">
             <nav>
                 <ul>
-                    <li><a class="selected" href="">Português (Brasil)</a></li>
+                    <li><a class="selected" href="">PortuguÃªs (Brasil)</a></li>
                     <li><a href="">English (US)</a></li>
-                    <li><a href="">Español</a></li>
-                    <li><a href="">Français (France)</a></li>
+                    <li><a href="">EspaÃ±ol</a></li>
+                    <li><a href="">FranÃ§ais (France)</a></li>
                     <li><a href="">Italiano</a></li>
                     <li><a href="">Deutsch</a></li>
                 </ul>

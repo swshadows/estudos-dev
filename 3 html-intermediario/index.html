@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="iso 8589-1">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Intermedi·rio</title>
+    <title>HTML Intermedi√°rio</title>
 </head>
 <body>
     <!-- Testes com forms -->
-    <h2>Testes com formul·rio (Pesquisa no Youtube)</h2>
-    <!-- GET mostra o cÛdigo na barra URL -->
+    <h2>Testes com formul√°rio (Pesquisa no Youtube)</h2>
+    <!-- GET mostra o c√≥digo na barra URL -->
     <form method="GET" action="http://www.youtube.com/results">
         <!-- Area de texto -->
         <input placeholder="Digite aqui sua pesquisa" type="text" name="search_query">
-        <!-- Bot„o de enviar -->
+        <!-- Bot√£o de enviar -->
         <input type="submit" value="Pesquisar">
     </form>
 
-    <h2>Testes com formul·rio #2 - Login/Senha</h2>
-    <!-- POST nao mostra o cÛdigo na barra URL, bom para senhas -->
+    <h2>Testes com formul√°rio #2 - Login/Senha</h2>
+    <!-- POST nao mostra o c√≥digo na barra URL, bom para senhas -->
     <form method="POST" action="">
-        <input placeholder="Digite seu nome de usu·rio" type="text" name="usuario">
+        <input placeholder="Digite seu nome de usu√°rio" type="text" name="usuario">
         <input placeholder="Digite sua senha" type="password" name="senha">
         <input type="submit">
     </form>
 
-    <h2>Testes com formul·rios #3 - Checkboxes e radios</h2>
-    <!-- Checkbox envia informaÁıes determinadas no campo value para o servidor -->
+    <h2>Testes com formul√°rios #3 - Checkboxes e radios</h2>
+    <!-- Checkbox envia informa√ß√µes determinadas no campo value para o servidor -->
     <form>
         <p><strong>Selecione os cursos que se interessa</strong></p>
         <input type="checkbox" name="curso" value="rn"> React Native
         <input type="checkbox" name="curso" value="rjs"> React JS
         <input type="checkbox" name="curso" value="njs"> Node.js
         <input type="checkbox" name="curso" value="an"> Angular
-        <p><strong>Selecione seu gÍnero</strong></p>
+        <p><strong>Selecione seu g√™nero</strong></p>
         <input checked required type="radio" name="genero" value="m"> Masculino
         <input type="radio" name="genero" value="f"> Feminino
         <input type="reset" value="Limpar dados">
-        <input type="submit" value="Enviar formul·rio">
+        <input type="submit" value="Enviar formul√°rio">
     </form>
 
-    <h2>Testes com formul·rios #4 - Selects</h2>
+    <h2>Testes com formul√°rios #4 - Selects</h2>
     <form>
-        <p><strong>De onde vocÍ est· preenchendo este formul·rio?</strong></p>
+        <p><strong>De onde voc√™ est√° preenchendo este formul√°rio?</strong></p>
         <select name="regiao">
-            <option value="n">Regi„o Norte</option>
-            <option value="nd">Regi„o Nordeste</option>
-            <option value="co">Regi„o Centro-Oeste</option>
-            <option value="s">Regi„o Sul</option>
-            <option selected value="sd">Regi„o Sudeste</option>
+            <option value="n">Regi√£o Norte</option>
+            <option value="nd">Regi√£o Nordeste</option>
+            <option value="co">Regi√£o Centro-Oeste</option>
+            <option value="s">Regi√£o Sul</option>
+            <option selected value="sd">Regi√£o Sudeste</option>
         </select>
-        <input type="submit" value="Enviar informaÁıes sobre regi„o">
+        <input type="submit" value="Enviar informa√ß√µes sobre regi√£o">
     </form>
 
     <h2>Com size e multiple (Segure Ctrl)</h2>
-    <!-- Com size e multiple, para aumentar o tamanho e selecionar v·rios -->
+    <!-- Com size e multiple, para aumentar o tamanho e selecionar v√°rios -->
     <form>
-        <p><strong>De onde vocÍ est· preenchendo este formul·rio?</strong></p>
+        <p><strong>De onde voc√™ est√° preenchendo este formul√°rio?</strong></p>
         <select name="regiao" size="5" multiple>
-            <option value="n">Regi„o Norte</option>
-            <option value="nd">Regi„o Nordeste</option>
-            <option value="co">Regi„o Centro-Oeste</option>
-            <option value="s">Regi„o Sul</option>
-            <option selected value="sd">Regi„o Sudeste</option>
+            <option value="n">Regi√£o Norte</option>
+            <option value="nd">Regi√£o Nordeste</option>
+            <option value="co">Regi√£o Centro-Oeste</option>
+            <option value="s">Regi√£o Sul</option>
+            <option selected value="sd">Regi√£o Sudeste</option>
         </select>
-        <input type="submit" value="Enviar informaÁıes sobre regi„o">
+        <input type="submit" value="Enviar informa√ß√µes sobre regi√£o">
     </form>
 
     <h2>Testando formulario #5 - Textareas</h2>
     <form>
-        <textarea placeholder="Digite aqui coment·rios adicionais" name="comment"></textarea>
-        <input type="submit" value="Enviar coment·rio">
+        <textarea placeholder="Digite aqui coment√°rios adicionais" name="comment"></textarea>
+        <input type="submit" value="Enviar coment√°rio">
     </form>
 
 </body>
