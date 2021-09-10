@@ -11,12 +11,3 @@
 
 ### css-intermediario
 - Testes e práticas intermediárias com CSS em nivel intermeriário, como media queries e responsividade
-
-### projetos
-- Pasta com projetos práticos desenvolvidos por mim
-```
-facebook-login:   Landing page do Facebook (HTML + CSS)
-google-pesquisa:  Landing page do Google Pesquisa (HTML + CSS)
-meu-site:         Landing page de site básico (HTML + CSS)
-starbucks:        Landing page do Starbucks (HTML + CSS)
-```
