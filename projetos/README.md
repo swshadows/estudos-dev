@@ -2,7 +2,7 @@
 
 captura-mailchimp:Captura de informações para newsletter (HTML + CSS)
 
-![Proof](https://github.com/swshadows/estudos-webdev/tree/master/projetos/captura-mailchimp/screenshot.png)
+![Proof](https://raw.githubusercontent.com/swshadows/estudos-webdev/master/projetos/captura-mailchimp/screenshot.png)
 
 facebook-login:   Landing page do Facebook (HTML + CSS)
 
