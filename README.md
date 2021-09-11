@@ -11,3 +11,6 @@
 
 ### css-intermediario
 - Testes e práticas intermediárias com CSS em nivel intermeriário, como media queries e responsividade
+
+### javascript-basico
+- Testes e práticas iniciais com JavaScript

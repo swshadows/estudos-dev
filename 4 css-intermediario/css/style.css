@@ -1,13 +1,16 @@
+/* Ajustando todo o corpo do HTML */
 body{
     margin:0;
     padding:0;
     font-family: 'Gill Sans', sans-serif;
 }
 
+/* Limpando flutuações (float) com div personalizada */
 .clear{
     clear: both;
 }
 
+/* Ajustando paragrafos (p) especificamente da classe text1, usando display inline-block */
 .text1 p{
     border: 1px solid black;
     padding: 5px;
@@ -16,6 +19,7 @@ body{
     margin: 10px;
 }
 
+/* Testando overflow na classe text2  */
 .text2{
     border: 2px dashed red;
     background-color: yellow;
@@ -25,6 +29,7 @@ body{
     overflow-x: hidden;
 }
 
+/* Ajustando detalhes da div de nome especifico divfloat1 */
 div.divfloat1{
     border: 2px solid black;
     background-color: #b425f2;
@@ -32,15 +37,18 @@ div.divfloat1{
     overflow: auto;
 }
 
+/* Usando flutuação (float) em imagem */
 img{
     float: left;
     width: 20%;
 }
 
+/* Personalizando estilo da lista */
 ul{
     list-style: none;
 }
 
+/* Testando float com elementos das listas dentro da classe menufloat1 */
 .menufloat li{
     border: 2px solid red;
     float: left;
@@ -50,6 +58,7 @@ ul{
     padding: 5px;
 }
 
+/* Ajustando position e floats, para testar centralização */
 div.card{
     position: relative;
     float: left;
@@ -60,11 +69,13 @@ div.card{
     border: 2px solid red;
 }
 
+/* Testando centralização com line-height */
 .cardcontent1{
     background-color: blue;
     line-height: 100px;
 }
 
+/* Testando centralização com transform e position absolute */
 .cardcontent2{
     position: absolute;
     background-color: orange;
@@ -73,6 +84,7 @@ div.card{
     transform: translate(-50%, -50%);
 }
 
+/* Testando centralização com padding */
 .cardcontent3{
     float: left;
     padding: 50px 50px;
@@ -81,6 +93,7 @@ div.card{
     border: 2px solid red;
 }
 
+/* Testando responsividade com porcentagens e position relative */
 .responsive1{
     background-color: gray;
     margin: 10px auto;
@@ -89,6 +102,7 @@ div.card{
     position: relative;
 }
 
+/* Textando responsividade em texto com porcentagens, overflow, fontsize, position absolute e transform */
 .responsivetext1{
     font-size: 2vw;
     overflow: auto;
@@ -103,6 +117,7 @@ div.card{
     width: 50%;
 }
 
+/* Preparando classe para utilizar mediaqueries */
 .mediaheader1{
     overflow: hidden;
     background-color: #b33f00;
@@ -111,11 +126,13 @@ div.card{
     padding: 15px;
 }
 
+/* Preparando classe para utilizar mediaqueries */
 .medialogo1{
     float: left;
     color: white;
 }
 
+/* Preparando classe para utilizar mediaqueries */
 .mediamenu1{
     margin: 0;
     padding: 0;
@@ -123,6 +140,7 @@ div.card{
     float: right;
 }
 
+/* Preparando classe para utilizar mediaqueries */
 .mediamenu1 li{
     display: inline-block;
     color: white;
@@ -130,7 +148,7 @@ div.card{
     padding: 5px;
     border: 1px solid black;
 }
-
+/* Utilizando media query para modificar a posição de elementos ao redimensionar (Mobile, etc.) */
 @media screen and (max-width: 700px) {
     .medialogo1{
         float: none;

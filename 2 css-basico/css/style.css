@@ -1,58 +1,69 @@
+/* Mudando a cor do ID title para amarelo    */
 #title{
     color: yellow;
 }
 
+/* Definindo a cor e o background da classe paragrafos */
 .paragrafos{
     color: red;
     background: url(../images/bg.jpg) center/cover no-repeat fixed;
 }
 
+/* Definindo a cor da classe text2 como azul */
 .text2{
     color: blue;
 }
 
+/* Definindo a cor de background, largura e altura da ID cm */
 #cm{
     background-color: blue;
     width: 10cm;
     height: 5cm;
 }
 
+/* Definindo a cor de background, largura e altura da ID mm */
 #mm{
     background-color: red;
     width: 10mm;
     height: 5mm;
 }
 
+/* Definindo a cor de background, largura e altura da ID in */
 #in{
     background-color: yellow;
     width: 10in;
     height: 5in;
 }
 
+/* Definindo a cor de background, largura e altura da ID px */
 #px{
     background-color: orange;
     width: 10px;
     height: 5px;
 }
 
+/* Definindo a cor de background, largura e altura da ID pt */
 #pt{
     background-color: green;
     width: 10pt;
     height: 5pt;
 }
 
+/* Definindo a cor de background, largura e altura da ID pc */
 #pc{
     background-color: black;
     width: 10pc;
     height: 5pc;
 }
 
+/* Classe div para inserir linha de tamanho definido com CSS */
 .linered{
+    background-color: red;
     width: 100%;
     height: 5px;
-    background-color: red;
 }
 
+/* Testando bordas na classe textrandom */
 .textrandom{
     color: white;
     background-color: blue;
@@ -61,6 +72,7 @@
     border: 2px solid green;
 }
 
+/* Testes com fontes */
 .fonttest{
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -68,6 +80,7 @@
     font-size: 25px;
 }
 
+/* Testes com links */
 a{
     text-decoration: none;
     padding: 10px;
@@ -79,17 +92,14 @@ a{
     border-radius: 10px;
 }
 
-/* a:active{
-    background-color: white;
-    color: purple;
-} */
-
+/* Testes com links quando o mouse estiver por cima */
 a:hover{
     color: white;
     background-color: red;
     border: 1px solid green;
 }
 
+/* Decorando listas não ordenadas */
 ul{
     list-style-image: url(../images/check.png);
     list-style-position: inside;
@@ -98,6 +108,7 @@ ul{
     background-color: #63f;
 }
 
+/* Decorando listas ordenadas */
 ol{
     list-style-type: upper-alpha;
     list-style-position: inside;
@@ -106,6 +117,7 @@ ol{
     background-color: #3f0;
 }
 
+/* Decorando os elementos da lista */
 li{
     border: 1px dashed black;
     background-color: aqua;
