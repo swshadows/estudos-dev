@@ -8,17 +8,21 @@
 
 - Testes e práticas iniciais com CSS (Cascading Style Sheets)
 
+### javascript-basico
+
+- Testes e práticas iniciais com JavaScript
+
 ### html-intermediario
 
 - Testes e práticas com HTML em nivel intermediário, como forms e inputs
 
 ### css-intermediario
 
-- Testes e práticas intermediárias com CSS em nivel intermeriário, como media queries e responsividade
+- Testes e práticas com CSS em nivel intermeriário, como media queries e responsividade
 
-### javascript-basico
+### javascript-intermediario
 
-- Testes e práticas iniciais com JavaScript
+- Testes e práticas com JavaScript em nivel intermediário, como localStorage, temporizadores e Math
 
 ### projetos
 
