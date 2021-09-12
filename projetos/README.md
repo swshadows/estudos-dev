@@ -16,3 +16,6 @@ Landing page de site básico (HTML + CSS)
 
 ### starbucks
 Landing page do Starbucks (HTML + CSS)
+
+### confeitaria-da-maria
+Landing page de modelo de confeitaria (HTML + CSS)
