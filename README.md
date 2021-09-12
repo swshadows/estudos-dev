@@ -19,3 +19,7 @@
 ### javascript-basico
 
 - Testes e práticas iniciais com JavaScript
+
+### projetos
+
+- Projetos práticos para testar conhecimentos sobre HTML, CSS e Javascript
