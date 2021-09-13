@@ -1,21 +1,31 @@
-## *Pasta com projetos práticos desenvolvidos por mim*
+## _Pasta com projetos práticos desenvolvidos por mim_
+
+### calculadora
+
+App de calculadura funcional básico (HTML + CSS + JavaScript)
 
 ### captura-mailchimp
+
 Captura de informações para newsletter (HTML + CSS)
 
 ![Proof](https://raw.githubusercontent.com/swshadows/estudos-webdev/master/projetos/captura-mailchimp/screenshot.png)
 
 ### facebook-login
+
 Landing page do Facebook (HTML + CSS)
 
 ### google-pesquisa
+
 Landing page do Google Pesquisa (HTML + CSS)
 
 ### meu-site
+
 Landing page de site básico (HTML + CSS)
 
 ### starbucks
+
 Landing page do Starbucks (HTML + CSS)
 
 ### confeitaria-da-maria
+
 Landing page de modelo de confeitaria (HTML + CSS)

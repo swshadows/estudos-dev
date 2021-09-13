@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <form id="calculator-body">
+      <fieldset>
+        <legend>Calculatron v0.1</legend>
+        <input type="text" name="visor" id="visor" />
+        <table>
+          <p class="header">Testes com operações simples</p>
+          <tr>
+            <td><input name="num9" class="num" value="9" onclick="calcNum(9)" type="button" /></td>
+            <td><input name="num8" class="num" value="8" onclick="calcNum(8)" type="button" /></td>
+            <td><input name="num7" class="num" value="7" onclick="calcNum(7)" type="button" /></td>
+            <td><input name="sum" class="operator" value="+" onclick="calcOperator('+')" type="button" /></td>
+          </tr>
+          <tr>
+            <td><input name="num6" class="num" value="6" onclick="calcNum(6)" type="button" /></td>
+            <td><input name="num5" class="num" value="5" onclick="calcNum(5)" type="button" /></td>
+            <td><input name="num4" class="num" value="4" onclick="calcNum(4)" type="button" /></td>
+            <td><input name="sub" class="operator" value="-" onclick="calcOperator('-')" type="button" /></td>
+          </tr>
+          <tr>
+            <td><input name="num3" class="num" value="3" onclick="calcNum(3)" type="button" /></td>
+            <td><input name="num3" class="num" value="2" onclick="calcNum(2)" type="button" /></td>
+            <td><input name="num3" class="num" value="1" onclick="calcNum(1)" type="button" /></td>
+            <td><input name="mutl" class="operator" value="*" onclick="calcOperator('*')" type="button" /></td>
+          </tr>
+          <tr>
+            <td><input name="num0" class="num" value="0" onclick="calcNum(0)" type="button" /></td>
+            <td><input name="equal" class="num" value="=" onclick="calcOperator('=')" type="button" /></td>
+            <td><input name="clear" class="num" value="CE" onclick="calcClear()" type="button" /></td>
+            <td><input name="div" class="operator" value="/" onclick="calcOperator('/')" type="button" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  margin: auto;
+  background-color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+#visor {
+  background-color: #ab5ccd;
+  text-align: right;
+  font-size: 20px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+legend {
+  margin: 0 auto;
+}
+
+fieldset,
+p.header {
+  margin: 10px auto;
+  border: 1px solid white;
+  padding: 3%;
+  width: 40%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: solid #ccc 1px;
+  font-size: 11px;
+}
+
+form input.num {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #e6b72b;
+}
+
+form input.operator {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #b2b2b2;
+}
