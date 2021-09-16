@@ -3,6 +3,7 @@
 Pasta para desafios retirados de vários sites
 
 <hr>
+
 ### AmazingGraph
 
 <a href="https://github.com/Lorenalgm/AmazingGraph">LINK PARA A PÁGINA DO DESAFIO</a>.
