@@ -1,36 +1,16 @@
 ## _Repositório para meus estudos relacionados ao desenvolvimento Web_
 
-#### html-basico
+#### treinos-html
 
-- Testes e práticas iniciais com HTML (HyperText Markup Language)
+- Testes e práticas com HTML (HyperText Markup Language) em nível básico, intermediário e avançado
 
-#### css-basico
+#### treinos-css
 
-- Testes e práticas iniciais com CSS (Cascading Style Sheets)
+- Testes e práticas com CSS (Cascading Style Sheets) em nível básico, intermediário, avançado e animações
 
-#### javascript-basico
+#### treinos-js
 
-- Testes e práticas iniciais com JavaScript
-
-#### html-intermediario
-
-- Testes e práticas com HTML em nivel intermediário, como forms e inputs
-
-#### css-intermediario
-
-- Testes e práticas com CSS em nivel intermeriário, como media queries e responsividade
-
-#### javascript-intermediario
-
-- Testes e práticas com JavaScript em nivel intermediário, como localStorage, temporizadores e Math
-
-#### html-avançado
-
-- Testes e práticas com HTML em nivel avançado, como video, audio e Canvas
-
-#### css-avançado
-
-- Testes e práticas com CSS em nível avançado, como pseudo-elementos, flexbox e grids
+- Testes e práticas iniciais com JS (JavaScript) em nível básico, intermediário e avançado
 
 #### desafios
 

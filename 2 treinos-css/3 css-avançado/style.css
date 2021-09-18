@@ -146,3 +146,144 @@ Ex: nth-child(2n) (odd para impar e even para par também funciona)*/
 .sqr2 {
   background-color: var(--var-color-red);
 }
+
+/* Testes com flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* align-content: space-between; */
+  background-color: gray;
+  height: 400px;
+  color: white;
+}
+
+.r1 {
+  /* order: 1; */
+  background-color: red;
+}
+
+.r2 {
+  flex-grow: 2;
+  /* align-self: flex-end; */
+  background-color: blue;
+}
+
+.r3 {
+  flex-shrink: 1;
+  background-color: green;
+}
+
+.rect {
+  width: 100px;
+  height: 100px;
+}
+
+/* Testes com grid */
+.grid-container {
+  height: 500px;
+  color: white;
+  display: grid;
+  padding: 20px;
+  background-color: gray;
+  grid-template: auto auto / auto auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.t1 {
+  background-color: red;
+}
+
+.t2 {
+  background-color: blue;
+}
+
+.t3 {
+  background-color: green;
+}
+
+.ract {
+  width: 100px;
+  height: 100px;
+}
+
+/* Grid area */
+.grid-container-area {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  color: white;
+  background-color: gray;
+
+  grid-template-areas:
+    "a2 a2 a2 a2 a2 a2"
+    "a1 a1 a3 a3 a3 a3"
+    "a1 a1 a5 a4 a4 a4"
+    "a6 a6 a6 a6 a6 a6";
+}
+
+.item1 {
+  grid-area: a1;
+}
+
+.item2 {
+  grid-area: a2;
+}
+
+.item3 {
+  grid-area: a3;
+}
+
+.item4 {
+  grid-area: a4;
+}
+
+.item5 {
+  grid-area: a5;
+}
+
+.item6 {
+  grid-area: a6;
+}
+
+/* Replicando grid container area com start/end */
+.grid-container-area-replicate {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  color: white;
+  background-color: gray;
+  grid-template: auto auto auto auto / auto auto auto auto auto auto;
+}
+
+.itemm1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.itemm2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.itemm3 {
+  grid-column-end: span 4;
+}
+
+.itemm4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.itemm5 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.itemm6 {
+  grid-column-end: span 6;
+}
