@@ -11,11 +11,11 @@ body {
   border: 2px solid gray;
 }
 
-.o {
+.O {
   position: relative;
 }
 
-.o:after {
+.O:after {
   content: "\1F6E1";
   position: absolute;
   top: 0;
@@ -26,11 +26,11 @@ body {
   line-height: 100px;
 }
 
-.x {
+.X {
   position: relative;
 }
 
-.x:after {
+.X:after {
   content: "\2694";
   position: absolute;
   top: 0;

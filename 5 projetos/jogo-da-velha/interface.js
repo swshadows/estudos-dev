@@ -26,6 +26,11 @@ function updateSquare(position) {
   let symbol = board[position];
 
   square.innerHTML = `<div class="${symbol}"></div>`;
+  if (checkDraw()) {
+    setTimeout(() => {
+      alert("O jogo resultou em um empate");
+    }, 10);
+  }
 }
 
 // Reseta o jogo

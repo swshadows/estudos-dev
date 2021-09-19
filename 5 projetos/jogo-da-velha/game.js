@@ -3,7 +3,8 @@
 let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
 let gameOver = false;
-let symbols = ["x", "o"];
+let draw = false;
+let symbols = ["X", "O"];
 let winStates = [
   [0, 1, 2],
   [3, 4, 5],
@@ -28,6 +29,7 @@ function handleMove(position) {
 
     if (!gameOver) playerTime = playerTime == 0 ? 1 : 0;
   }
+
   return gameOver;
 }
 
@@ -45,4 +47,14 @@ function isWin() {
     }
   }
   return false;
+}
+
+function checkDraw() {
+  let count = 0;
+  for (let index in board) {
+    if (board[index] == "X" || board[index] == "O") count++;
+  }
+
+  if (count == 9) return true;
+  else return false;
 }
