@@ -14,8 +14,8 @@
 
 #### desafios
 
-- Desafios retirados de várias partes da internet
+- Projetos práticos desenvolvidos com referência a algo já pronto
 
 #### projetos
 
-- Projetos práticos desenvolvidos solo ou em curso para testar os conhecimentos aprendidos
+- Projetos práticos desenvolvidos sem referência, somente com a ideia pronta
