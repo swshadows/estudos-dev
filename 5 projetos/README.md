@@ -1,11 +1,12 @@
 ## _Pasta com projetos práticos desenvolvidos por mim_
 
+Os projetos desta pasta são criados por mim do 0 ou com leve inspiração em algo existente
+
 <hr>
 
 ### calculadora
 
 App de calculadura funcional básico
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -16,12 +17,9 @@ Tecnologias utilizadas:
 
 ### captura-mailchimp
 
-Captura de informações para newsletter
 Site de formulário com newsletter funcional
 
-<a href="https://raw.githubusercontent.com/swshadows/estudos-webdev/master/5%20projetos/captura-mailchimp/screenshot.png">Clique aqui</a> para ver a funcionalidade do newsletter
-(Testado com email alternativo)
-Tecnologias utilizadas:
+<a href="https://raw.githubusercontent.com/swshadows/estudos-webdev/master/5%20projetos/captura-mailchimp/screenshot.png">Clique aqui</a> para ver a funcionalidade do newsletter (Testado com email alternativo)
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -33,8 +31,6 @@ Tecnologias utilizadas:
 
 Site que calcula o total de bebidas e comidas necessárias para um churrasco
 
-Tecnologias utilizadas:
-
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -45,7 +41,6 @@ Tecnologias utilizadas:
 ### confeitaria-da-maria
 
 Landing page de loja de confeiteiro (Desafio de um amigo)
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -56,7 +51,6 @@ Tecnologias utilizadas:
 ### facebook-login
 
 Landing page do Facebook replicada com conhecimentos adquiridos
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -67,7 +61,6 @@ Tecnologias utilizadas:
 ### google-pesquisa
 
 Landing page do Google Pesquisa replicada com conhecimentos adquiridos
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -78,7 +71,6 @@ Tecnologias utilizadas:
 ### jogo-da-velha
 
 Jogo da velha funcional
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -90,7 +82,6 @@ Tecnologias utilizadas:
 ### meu-site
 
 Primeiro projeto, desenvolvendo um site funcional com todas as tags básicas aprendidas em HTML e CSS para estilização
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -101,10 +92,20 @@ Tecnologias utilizadas:
 ### starbucks
 
 Landing page de modelo de página do Starbucks
-Tecnologias utilizadas:
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+</div>
+<hr>
+
+### temporizador
+
+Projeto de cronometro
+
+<div style="display: inline-block">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 </div>
 <hr>

@@ -1,12 +1,16 @@
-# Desafios
+## _Pasta com projetos práticos replicados_
 
-Pasta para desafios retirados de vários sites
+Os projetos dessa pasta são réplicas de projetos já desenvolvidos, porém feitos do 0 somente olhando o resultado final como referência.
+<br>
+Links são disponibilizados para comparação da minha versão com a versão original
 
 <hr>
 
 ### AmazingGraph
 
-<a href="https://github.com/Lorenalgm/AmazingGraph">LINK PARA A PÁGINA DO DESAFIO</a>.
+NÃO CONCLUIDO
+
+<a href="https://github.com/Lorenalgm/AmazingGraph">Clique aqui</a> para ir para a página do desafio.
 
 Desenvolver um landing page responsiva para um site de criação de gráficos
 
