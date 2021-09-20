@@ -101,7 +101,7 @@ Landing page de modelo de página do Starbucks
 
 ### temporizador
 
-Projeto de cronometro
+Projeto de temporizador + cronometro
 
 <div style="display: inline-block">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
