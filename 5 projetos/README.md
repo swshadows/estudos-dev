@@ -79,6 +79,7 @@ Jogo da velha funcional
 </div>
 
 <hr>
+
 ### meu-site
 
 Primeiro projeto, desenvolvendo um site funcional com todas as tags básicas aprendidas em HTML e CSS para estilização
@@ -99,7 +100,7 @@ Landing page de modelo de página do Starbucks
 </div>
 <hr>
 
-### temporizador
+### temporizador-cronometro
 
 Projeto de temporizador + cronometro
 
