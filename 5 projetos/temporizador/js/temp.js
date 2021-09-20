@@ -3,9 +3,9 @@ let running = false;
 let hours = document.getElementById("hour");
 let minutes = document.getElementById("minute");
 let seconds = document.getElementById("second");
-let cronometer;
-// Função de iniciar o cronometro no clique
-function startCron() {
+let temporizador;
+// Função de iniciar o temporizador no clique
+function startTemp() {
   // Pegando os valores inseridos nos campos
   let hourInput = document.getElementById("hour-input").value;
   let minInput = document.getElementById("min-input").value;
@@ -26,12 +26,12 @@ function startCron() {
       if (secInput >= 60) seconds.innerHTML = 59;
       else seconds.innerHTML = secInput;
     }
-    cronometer = setInterval(() => {
+    temporizador = setInterval(() => {
       reduceSeconds();
     }, 1000);
     running = true;
   } else {
-    alert("CRONOMETRO JÁ ESTÁ RODANDO, CLIQUE EM 'PARAR' PARA PARAR O CRONOMETRO ATUAL");
+    alert("TEMPORIZADOR JÁ ESTÁ RODANDO, CLIQUE EM 'PARAR' PARA PARAR O TEMPORIZADOR ATUAL");
   }
 
   //   Limpando os campos de input
@@ -62,19 +62,19 @@ function reduceMinutes() {
 function reduceHours() {
   if (hours.innerHTML > 0) hours.innerHTML--;
   else {
-    stopCron();
+    stopTemp();
     running = false;
   }
 }
 
-// Função para parar e zerar o cronometro
-function stopCron() {
+// Função para parar e zerar o temporizador
+function stopTemp() {
   if (!running) {
-    alert("CRONOMETRO AINDA NÃO INICIADO");
+    alert("TEMPORIZADOR AINDA NÃO INICIADO");
   } else {
-    alert("CRONOMETRO ZERADO");
+    alert("TEMPORIZADOR ZERADO");
     running = false;
-    clearTimeout(cronometer);
+    clearTimeout(temporizador);
     hours.innerHTML = 0;
     minutes.innerHTML = 0;
     seconds.innerHTML = 0;

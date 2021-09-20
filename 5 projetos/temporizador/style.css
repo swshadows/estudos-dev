@@ -47,18 +47,25 @@ button:hover {
 }
 
 #hour,
+#c-hour,
 #minute,
-#second {
+#c-minute,
+#second,
+#c-second,
+#c-millsec {
   font-size: 50px;
 }
 
-.crono {
+.tempo,
+.crono,
+.c-laps {
   margin: 10px auto;
   padding: 20px;
   border: 2px solid white;
-  width: 50%;
+  width: 80%;
 }
 
+.tempo p,
 .crono p {
   display: inline;
   border: 1px solid white;
@@ -70,4 +77,9 @@ button:hover {
     display: block;
     margin: 5px auto;
   }
+}
+.lap-para {
+  padding: 5px;
+  margin: 0 auto;
+  border-top: 1px dotted white;
 }
