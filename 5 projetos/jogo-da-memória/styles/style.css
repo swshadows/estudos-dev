@@ -1,0 +1,110 @@
+/* Definindo variaveis */
+:root {
+  --var--nearblack: #101c2c;
+}
+
+/* Ajustando todo o documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo fontes padrão */
+body {
+  margin: auto;
+  font-family: "Righteous", sans-serif;
+}
+
+/* Estilizando o titulo do jogo */
+h1 {
+  text-align: center;
+}
+
+/* Estilizando o tabuleiro */
+#game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+/* Estilizando a carta-mãe (container) */
+.card {
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+  transition: transform 500ms;
+}
+
+/* Definindo tamanho padrão para icones */
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Estilizando cartas */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: var(--var--nearblack);
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  /* display: none; */
+  font-size: 40px;
+  color: var(--var--nearblack);
+  background-color: #05c3ff;
+}
+
+/* Classe para virar as cartas */
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* Estilizando tela de gameover */
+#gameOver {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  flex-direction: column;
+  top: 0;
+}
+
+/* Estilizando botão de restart */
+#restartBtn {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: yellow;
+  margin-top: 10px;
+  transition: all 400ms;
+}
+
+#restartBtn:hover {
+  background-color: #9d9d00;
+}
