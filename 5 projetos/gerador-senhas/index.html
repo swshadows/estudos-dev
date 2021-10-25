@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body>
+    <!-- Corpo do app -->
+    <main class="app-body">
+      <div class="info">Criado por <a href="http://github.com/swshadows" target="_blank">@swshadows</a></div>
+      <h1 class="app-title">Gerador de Senhas v0.1</h1>
+      <p id="warning" class="app-warning-length">Senhas devem ter no minimo 8 e no maximo 128 caracteres</p>
+      <div class="flex-bar">
+        <input id="appinput" class="app-input" type="number" placeholder="Tamanho da senha" />
+        <button class="app-button" onclick="start()">GERAR SENHA</button>
+      </div>
+    </main>
+    <!-- Resultados -->
+    <div id="appresults" class="app-results">
+      <div class="flex-bar">
+        <input class="app-input" id="resinput" type="text" />
+        <div class="tooltip">
+          <button class="app-button" onmouseout="outTooltip()" onclick="copyPass()"><span id="ttip" class="tooltiptext">Copiar senha</span>COPIAR</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+:root {
+  --vpurple: #7943ba;
+  --vlpurple: #a874e8;
+}
+
+/* Definindo regras gerais */
+body {
+  background-color: black;
+  color: white;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+/* Estilizando corpo do app */
+.app-body {
+  background: linear-gradient(90deg, rgb(36, 0, 28) 11%, rgb(82, 144, 140) 50%, rgb(78, 33, 97) 100%);
+  border: 1px white solid;
+  border-radius: 10px;
+  margin: 100px auto 50px;
+  padding: 10px;
+  text-align: center;
+  width: 60%;
+}
+/* Estilizando classe de informações */
+.info {
+  text-align: left;
+}
+
+.info a {
+  color: var(--vpurple);
+  text-decoration: none;
+}
+
+.info a:visited {
+  color: var(--vlpurple);
+}
+
+/* Estilizando titulo do app */
+.app-title {
+  font-size: 30px;
+}
+
+/* Estilizando aviso de largura da senha */
+.app-warning-length {
+  visibility: hidden;
+}
+
+/* Estilizando div para centralização */
+.flex-bar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilizando inputs */
+
+.app-input {
+  text-align: center;
+  margin-right: 10px;
+  width: 150px;
+  background-color: var(--vpurple);
+}
+
+.app-input:focus {
+  background-color: var(--vlpurple);
+  outline: none;
+}
+
+::placeholder {
+  color: #aeaeae;
+}
+
+/* Estilizando botões */
+.app-button {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  border: 1px white solid;
+  transition: all 200ms;
+  font-size: 12px;
+}
+
+.app-button:hover {
+  background-color: #3e3e3e;
+}
+
+/* Estilizando resultados */
+.app-results {
+  display: none;
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px white solid;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.app-results .app-input {
+  width: 47%;
+}
+
+/* Estilizando tooltip copy */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--vpurple);
+  left: 110%;
+  bottom: 5%;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  animation: purpleanim 1s infinite;
+}
+
+@keyframes purpleanim {
+  0% {
+    background-color: var(--vpurple);
+  }
+  50% {
+    background-color: var(--vlpurple);
+  }
+  100% {
+    background-color: var(--vpurple);
+  }
+}
