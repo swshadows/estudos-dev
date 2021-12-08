@@ -1,5 +1,4 @@
 <h1>Estudando PHP</h1>
-<p>Código <a target="_blank" href="https://github.com/swshadows/estudos-webdev/tree/master/2%20treinos-php">no Github</a></p>
 
 <?php
 $num = 100;
@@ -120,8 +119,7 @@ for ($num = 0; $num < 20; $num++) {
 }
 
 // Funções
-function somar(int $n1, int $n2 = 0, int $n3 = 0)
-{
+function somar(int $n1, int $n2 = 0, int $n3 = 0) {
     $total = $n1 + $n2 + $n3;
     return $total;
 }
@@ -130,8 +128,7 @@ $soma = somar(10, 3);
 echo 'Total: ' . $soma . '<br/>';
 
 // Parâmetros - Referência
-function subtrair($n1, $n2, &$res)
-{
+function subtrair($n1, $n2, &$res) {
     $res = $n1 - $n2;
 }
 
@@ -152,8 +149,7 @@ $porcento1 = fn (int $valor, int $percent) => $valor * ($percent / 100);
 echo $porcento1(30, 10) . "<br/>";
 
 // Recursiva
-function dividirAteZero(int $valor)
-{
+function dividirAteZero(int $valor) {
     $half = $valor / 2;
     echo $half . ' ';
     if (round($half) > 0) {
@@ -273,8 +269,7 @@ echo date('d.m.y', $time) . '<br/>'; // Formatar a data em um padrão normal
 // Exercicio
 // Fazer uma função que recebe a data em formato internacional e retorna a data formatada em padrão BR com o dia da semana
 $time = '2014-12-05';
-function convertDate($time)
-{
+function convertDate($time) {
     echo date('d/m/Y', strtotime($time)) . ' - ';
     switch (date('l', strtotime($time))) {
         case 'Sunday':
