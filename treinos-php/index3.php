@@ -148,3 +148,133 @@ $foto = new Foto(20, 'https://facebook.com/photo0.png');
 $foto->setId(0);
 
 echo "FOTO #" . $foto->getId() . " - " . $foto->getLikes() . " Likes - Acessível em: " . $foto->getUrl() . "<br/>";
+
+// Interface
+// Utilizada para organização
+interface Database {
+    public function listProducts();
+    public function addProduct();
+    public function removeProduct();
+}
+
+class MySQL implements Database {
+    public function listProducts() {
+    }
+    public function addProduct() {
+    }
+    public function removeProduct() {
+    }
+}
+
+class MongoDB implements Database {
+    public function listProducts() {
+    }
+    public function addProduct() {
+    }
+    public function removeProduct() {
+    }
+}
+
+// Polimorfismo
+interface Forma {
+    public function getType();
+    public function getArea();
+}
+class Quadrado {
+    private $medidaLado;
+
+    public function __construct($l) {
+        $this->medidaLado = $l;
+    }
+
+    public function getTipo() {
+        return 'Quadrado';
+    }
+
+    public function getArea() {
+        return $this->medidaLado * 2;
+    }
+}
+class Circulo {
+    private $raio;
+
+    public function __construct($r) {
+        $this->raio = $r;
+    }
+
+    public function getTipo() {
+        return 'Circulo';
+    }
+    public function getArea() {
+        return pi() * (pow($this->raio, 2));
+    }
+}
+
+$quadrado = new Quadrado(5);
+$circulo = new Circulo(7);
+
+$objetos = [$quadrado, $circulo];
+
+foreach ($objetos as $obj) {
+    $tipo = $obj->getTipo();
+    $area = $obj->getArea();
+
+    echo "Área: " . $tipo . " : " . $area . "<br/>";
+}
+
+// Namespace
+require('classes/classe1.php');
+require('classes/classe2.php');
+
+$class1 = new class2\MinhaClasse();
+echo $class1->testar() . "<br/>";
+
+// Injeção de dependência
+class BasicSum {
+    public function sum($x, $y) {
+        return $x + $y;
+    }
+}
+
+class ComplicatedSum {
+    public function sum($x, $y) {
+        $result = $x;
+
+        for ($i = 0; $i < $y; $i++) {
+            $result++;
+        }
+        return $result;
+    }
+}
+
+class Soma {
+    private $method;
+
+    public function __construct($t) {
+        $this->method = $t;
+    }
+
+    public function sum($x, $y) {
+        return $this->method->sum($x, $y);
+    }
+}
+
+$mat = new Soma(new ComplicatedSum());
+echo $mat->sum(10, 20) . "<br/>";
+
+// Autoload
+spl_autoload_register(function ($class) {
+    $baseDir = __DIR__ . '\classes\\';
+    $file = $baseDir . $class . '.php';
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+use matematica\MatematicaImport as MatematicaImport;
+
+$m = new MatematicaImport();
+echo "Resultado: " . $m->somar(10, 20) . "<br/>";
+?>
+
+<a href="index4.php">Próxima página</a>
