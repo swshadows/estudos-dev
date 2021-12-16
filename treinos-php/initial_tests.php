@@ -1,6 +1,7 @@
-<h1>Estudando PHP</h1>
-
 <?php
+
+require 'imports/link_header.php';
+
 $num = 100;
 echo $num + 200;
 echo "<br/>";
@@ -306,4 +307,4 @@ require('imports/header.php');
 require('imports/user.php');
 echo '<a href="imports/sobre.php">Link para Sobre.php usando o mesmo header</a> ' . 'Testando imports' . '<br/>';
 echo 'User: ' . $username . ' ' . 'Senha: ' . $password . '<br/>';
-echo 'Continua na <a href="index2.php">próxima página</a>';
+echo '<a href="index.html">Voltar para o indice</a>';

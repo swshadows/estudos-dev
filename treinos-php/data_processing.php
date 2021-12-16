@@ -1,8 +1,8 @@
 <?php
+require 'imports/link_header.php';
 session_start();
 require('imports/header.php');
 ?>
-<a href="index.php">Voltar para pagina anterior</a>
 
 <h2>Exercicio</h2>
 <a href="forms/exercicio/login.php">Ir para página de exercicio</a>
@@ -96,5 +96,5 @@ copy('arquivo/move.txt', 'arquivo/move_rename/move.txt');
 </form>
 
 <?php
-echo 'Continua na <a href="index3.php">próxima página</a>';
+echo '<a href="index.html">Voltar para o indice</a>';
 ?>

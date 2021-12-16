@@ -1,4 +1,6 @@
 <?php
+require 'imports/link_header.php';
+
 // Banco de dados
 require 'database_tests/config.php';
 require 'database_tests/models/UsuarioDaoMySql.php';
@@ -15,8 +17,28 @@ $lista = $usuarioDao->findAll();
 // echo "</pre>";
 
 ?>
+<style>
+    .tablebtn,
+    .tablebtn:visited,
+    .adduser {
+        color: #00ff00;
+        background-color: #000;
+        border: 1px solid #fff;
+        text-decoration: none;
+        background: #000;
+    }
 
-<a href="database_tests/adicionar.php">Adicionar usuário</a>
+    .adduser {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    table {
+        margin: 100px 0;
+    }
+</style>
+<h1>Testes com banco de dados utilizando PhpMyAdmin</h1>
+<a class="adduser" href="database_tests/adicionar.php">Adicionar usuário</a>
 
 <table border="1" width="100%">
     <tr>
@@ -31,8 +53,8 @@ $lista = $usuarioDao->findAll();
             <td><?= $usuario->getNome(); ?></td>
             <td><?= $usuario->getEmail(); ?></td>
             <td>
-                <a href="database_tests/editar.php?id=<?= $usuario->getId() ?>"> [ Editar ] </a>
-                <a href="database_tests/delete_usuario.php?id=<?= $usuario->getId() ?>" onclick="return confirm('Tem certeza que deseja excluir?')"> [ Excluir ] </a>
+                <a class="tablebtn" href="database_tests/editar.php?id=<?= $usuario->getId() ?>"> [ Editar ] </a>
+                <a class="tablebtn" href="database_tests/delete_usuario.php?id=<?= $usuario->getId() ?>" onclick="return confirm('Tem certeza que deseja excluir?')"> [ Excluir ] </a>
             </td>
         </tr>
     <?php endforeach; ?>

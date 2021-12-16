@@ -1,4 +1,6 @@
-<a href="index2.php">Voltar para pagina anterior</a>
+<?php
+require 'imports/link_header.php';
+?>
 <h1>Objetos</h1>
 
 <?php
@@ -277,4 +279,4 @@ $m = new MatematicaImport();
 echo "Resultado: " . $m->somar(10, 20) . "<br/>";
 ?>
 
-<a href="index4.php">Próxima página</a>
+<a href="index.html">Voltar para o indice</a>
