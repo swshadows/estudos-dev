@@ -38,6 +38,7 @@ $lista = $usuarioDao->findAll();
     }
 </style>
 <h1>Testes com banco de dados utilizando PhpMyAdmin</h1>
+<p>Banco de dados em anexo para importação: <a href="database_tests/test.sql">Clique aqui</a></p>
 <a class="adduser" href="database_tests/adicionar.php">Adicionar usuário</a>
 
 <table border="1" width="100%">
