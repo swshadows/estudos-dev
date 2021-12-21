@@ -16,3 +16,5 @@
 1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
 2. Copie e cole no seu servidor de preferência (XAMPP, WAMP, etc)
 3. Explore o repositório com os links indexados :smile:
+
+Lembre-se de usar e abusar dos comandos **Origem da Página** e **Inspecionar Elemento** do seu navegador
