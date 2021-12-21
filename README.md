@@ -1,4 +1,4 @@
-## _Repositório para meus estudos relacionados a desenvolvimento Web_
+## _Repositório para estudos com tecnologias Fullstack_
 
 #### _Tecnologias usadas até o momento_
 
@@ -11,30 +11,8 @@
     <img src="https://img.shields.io/badge/PHP-informational?style=flat&logo=php&logoColor=fff&color=000">
 </div>
 
-##### treinos-html
+# Como visualizar o projeto
 
-- Testes e práticas com HTML (HyperText Markup Language)
-
-##### treinos-css
-
-- Testes e práticas com CSS (Cascading Style Sheets)
-
-##### treinos-js
-
-- Testes e práticas iniciais com JS (JavaScript)
-
-##### treinos-php
-
-- Testes e práticas iniciais com PHP (HyperText Preprocessor)
-
-##### desafios
-
-- Projetos práticos desenvolvidos retirados da internet, com modelo pré-pronto.
-
-##### projetos
-
-- Projetos práticos desenvolvidos sem referência, com ideias próprias e sem modelo pré-pronto.
-
-##### frameworks
-
-- Testes e práticas para aprendizado de frameworks e libs diversas. Tecnologias estão citadas acima.
+1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
+2. Copie e cole no seu servidor de preferência (XAMPP, WAMP, etc)
+3. Explore o repositório com os links indexados :smile:
