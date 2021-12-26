@@ -4,56 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estudos Fullstack</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>estudos-fullstack</title>
   </head>
-  <style>
-    .front {
-      color: #158e35;
-    }
-
-    .back {
-      color: #8e1525;
-    }
-  </style>
   <body>
-    <h1>Repositório dedicado a toda minha jornada de desenvolvimento Fullstack</h1>
+    <h1>estudos-fullstack: <a target="_blank" href="https://github.com/swshadows/estudos-fullstack">Github</a></h1>
+    <h2>Obrigado por clonar meu projeto</h2>
+    <p>Para visualizar os códigos, recomendo a utilização de um editor de código como <strong>VSCode, Atom ou outros.</strong></p>
     <hr />
-    <h2>Seja bem-vindo e obrigado pelo interesse em clonar o projeto</h2>
-    <hr />
-    <ul>
-      <li><h2>Estudos</h2></li>
-      <li>
-        <a href="estudos-html/index.html">Estudos HTML</a>
-        -> Estudos centrais sobre HTML5, focado em <span class="front">Front-End</span>;
-      </li>
-      <li>
-        <a href="estudos-css/index.html">Estudos CSS</a>
-        -> Estudos centrais sobre CSS3, focado em <span class="front">Front-End</span>;
-      </li>
-      <li>
-        <a href="estudos-js/index.html">Estudos JS</a>
-        -> Estudos centrais sobre JavaScript, focado em <span class="front">Front-End</span>;
-      </li>
-      <li>
-        <a href="estudos-php/index.html">Estudos PHP</a>
-        -> Estudos centrais sobre PHP, focado em <span class="back">Back-End</span>;
-      </li>
-      <li>
-        <a href="frameworks e etc/index.html">Estudos com Frameworks</a>
-        -> Estudos centrais focados em frameworks de diversos tipos;
-      </li>
-    </ul>
+    <h3>Estrutura do projeto</h3>
 
-    <ul>
-      <li><h2>Projetos e Práticas</h2></li>
-      <li>
-        <a href="projetos-copy/index.html">Projetos-Copy</a>
-        -> Pasta com projetos práticos. Esse projetos focam em copiar algo já existente com 'assets' pré-prontos;
-      </li>
-      <li>
-        <a href="projetos-zero/index.html">Projetos-Zero</a>
-        -> pasta com projetos práticos. Esses projetos focam em criar algo do absoluto zero com ideias próprias;
-      </li>
-    </ul>
+    <div class="flex">
+      <!--? Estudos WEB -->
+      <ul>
+        <h4>📁 Estudos Web</h4>
+        <li class="section-li" id="html-li">
+          📁 HTML5 - HyperText Markup Language
+          <ul>
+            <li><a href="estudos-html/basic.html">🌐 Básico:</a> Textos, listas, imagens e tabelas;</li>
+            <li><a href="estudos-html/intermediary.html">🌐 Intermediário:</a> Formulários, inputs, selects e textarea</li>
+            <li><a href="estudos-html/advanced.html">🌐 Avançado:</a> Audio, video, iframe, animações mixado com um pouco de JS básico</li>
+          </ul>
+        </li>
+        <li class="section-li" id="css-li">
+          📁 CSS3 - Cascading Style Sheets
+          <ul>
+            <li><a href="estudos-css/basic.html">🌐 Básico:</a> Paragrafos, tamanhos, fontes, margin, padding e etc;</li>
+            <li><a href="estudos-css/intermediary.html">🌐 Intermediário:</a> Display, overflow, floating, alinhamentos, media queries e etc;</li>
+            <li><a href="estudos-css/advanced.html">🌐 Avançado:</a> Pseudoelementos, calc, seletores, transform, flexbox, grid e etc;</li>
+          </ul>
+        </li>
+        <li class="section-li" id="js-li">
+          📁 JS - JavaScript
+          <ul>
+            <li><a href="estudos-js/basic.html">🌐 Básico:</a> Variáveis, operações, condições, repetições, funções, datas, construtores e etc;</li>
+            <li><a href="estudos-js/intermediary.html">🌐 Intermediário:</a> DOM, EventListener, 'this', mousein/out, Math, JSON, localStorage, interval e timeout, e etc;</li>
+            <li><a href="estudos-js/advanced.html">🌐 Avançado:</a> This e Bind, fetch, promise, AJAX Async Await, Filter, Map, Reduce, Try/Catch, e etc;</li>
+          </ul>
+        </li>
+        <li class="section-li" id="php-li">
+          📁 PHP 7.4 - HyperText Preprocessor (requer servidor)
+          <ul>
+            <li><a href="estudos-php/initial_tests.php">🌐 Testes iniciais:</a> Testes iniciais com a linguagem ;</li>
+            <li><a href="estudos-php/data_processing.php">🌐 Processamento de dados:</a> Forms e arquivos;</li>
+            <li><a href="estudos-php/classes_OOP.php">🌐 Classes e POO:</a> Uso de programação orientada a objetos com PHP;</li>
+            <li><a href="estudos-php/composer.php">🌐 Composer:</a> Fazendo uso do gerenciador de pacotes Composer;</li>
+            <li><a href="estudos-php/db_tests.php">🌐 Banco de dados:</a> Testes iniciais com banco de dados MariaDB;</li>
+            <li><a href="estudos-php/SOLID.php">🌐 SOLID:</a> Aprendizado do conceito SOLID;</li>
+            <li><a href="estudos-php/password_tests.php">🌐 Senhas:</a> Fazendo uso da encriptação de senhas;</li>
+            <li><a href="estudos-php/image_processing.php">🌐 Imagens:</a> Processando e manipulando imagens;</li>
+            <li><a href="estudos-php/datetime.php">🌐 Datas e tempo:</a> Utilizando datas e tempos mais a fundo;</li>
+            <li><a href="estudos-php/API.php">🌐 API:</a> Programando minha API com banco de dados;</li>
+            <li><a href="estudos-php/MVC.php">🌐 MVC:</a> Aprendizado do padrão MVC <strong>(Não concluído)</strong>;</li>
+          </ul>
+        </li>
+        <li class="section-li" id="frameworks-li">
+          📁 Frameworks Web
+          <ul>
+            <li id="bootstrap-li"><a href="frameworks-libs/bootstrap/index.html">🌐 Bootstrap:</a> Utilizando Bootstrap 5;</li>
+            <li id="jquery-li"><a href="frameworks-libs/jquery/index.html"> 🌐 jQuery:</a> Utilizando jQuery;</li>
+          </ul>
+        </li>
+        <li class="section-li" id="projectc-li"><a href="projetos-copy/index.html">📁 Projetos-Copy:</a> Projetos criados com uma base;</li>
+        <li class="section-li" id="projectz-li"><a href="projetos-zero/index.html">📁 Projetos-Zero:</a> Projetos criados do absoluto zero;</li>
+      </ul>
+
+      <!--? Estudos Mobile -->
+
+      <!--? Estudos Desktop -->
+    </div>
   </body>
 </html>
