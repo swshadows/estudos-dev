@@ -10,8 +10,9 @@ body {
 }
 
 .flex {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 ul {
@@ -19,9 +20,31 @@ ul {
   background-color: #181818;
 }
 
+.parent-ul {
+  width: 30%;
+  max-width: 30%;
+  margin: 0 10px;
+}
+
 li {
   padding: 1px;
   list-style: square;
+}
+
+details {
+  margin: 10px;
+}
+
+.title {
+  padding: 10px;
+  cursor: pointer;
+  color: #30b09f;
+  transition: 400ms all;
+}
+
+.title:hover {
+  border-radius: 10px;
+  background-color: #414141;
 }
 
 a,
@@ -36,9 +59,4 @@ a:hover {
 
 .section-li {
   transition: 100ms all;
-}
-
-.section-li:hover {
-  border-radius: 10px;
-  background-color: #414141;
 }

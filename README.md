@@ -2,7 +2,7 @@
 
 # Como visualizar o projeto
 
-:warning: Para tecnologias não-web ou para se aprofundar no código, utilize um editor de código como **VSCode**, **Atom** ou outros
+:warning: Para tecnologias não-web ou para se aprofundar no código, utilize um editor de código como **VSCode**, **Atom** ou outros :warning:
 
 1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
 2. Copie e cole no seu servidor de preferência (XAMPP, WAMP, etc)
