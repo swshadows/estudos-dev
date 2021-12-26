@@ -278,5 +278,3 @@ use matematica\MatematicaImport as MatematicaImport;
 $m = new MatematicaImport();
 echo "Resultado: " . $m->somar(10, 20) . "<br/>";
 ?>
-
-<a href="index.html">Voltar para o indice</a>

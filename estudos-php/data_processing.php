@@ -94,7 +94,3 @@ copy('arquivo/move.txt', 'arquivo/move_rename/move.txt');
     <input type="file" name="arquivo">
     <input type="submit" value="Enviar arquivo">
 </form>
-
-<?php
-echo '<a href="index.html">Voltar para o indice</a>';
-?>

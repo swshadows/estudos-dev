@@ -1,3 +1,7 @@
+<?php
+require 'imports/link_header.php'
+?>
+
 <p>Utilize um gerenciador de requisições como <a target="_blank" href="https://resttesttest.com">REST Test Test</a> para enviar as requisições para a API</p>
 <p>A tabela <a href="API/devsnotes.sql">devsnotes</a> está incluida no arquivo como anexo para importação</p>
 

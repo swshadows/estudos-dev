@@ -17,4 +17,3 @@ $log->pushHandler(new StreamHandler('teste.log', Logger::WARNING));
 $log->warning('Foo');
 $log->error('Bar');
 ?>
-<a href="index.html">Voltar para o indice</a>

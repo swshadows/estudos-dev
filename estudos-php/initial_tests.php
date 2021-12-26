@@ -307,4 +307,3 @@ require('imports/header.php');
 require('imports/user.php');
 echo '<a href="imports/sobre.php">Link para Sobre.php usando o mesmo header</a> ' . 'Testando imports' . '<br/>';
 echo 'User: ' . $username . ' ' . 'Senha: ' . $password . '<br/>';
-echo '<a href="index.html">Voltar para o indice</a>';
