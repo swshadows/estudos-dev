@@ -2,10 +2,13 @@
 
 # Como visualizar o projeto
 
-:warning: Para tecnologias não-web ou para se aprofundar no código, utilize um editor de código como **VSCode**, **Atom** ou outros :warning:
+<div align="center">
+
+![reposize](https://img.shields.io/github/repo-size/swshadows/estudos-fullstack?color=313131&label=Tamanho%20do%20Repositório&logo=github&logoColor=fff&style=flat-square)
+
+</div>
 
 1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
-2. Copie e cole no seu servidor de preferência (XAMPP, WAMP, etc)
-3. Explore o repositório com os links indexados
+2. Explore o conteudo com um editor de código ou texto
 
-Lembre-se de usar os comandos **Origem da Página** e **Inspecionar Elemento** do seu navegador
+:warning: Podem haver instruções extras dentro das pastas especificas em arquivos `README.md`

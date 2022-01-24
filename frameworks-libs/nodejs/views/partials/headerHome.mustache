@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body>
+    <h1>Cabeçalho da página</h1>
+    <hr />
+    {{#flashes}}
+      {{#success}}
+        <div>{{.}}</div>
+      {{/success}}
+      {{#error}}
+        <div>{{.}}</div>
+      {{/error}}
+    {{/flashes}}
+  </body>
+</html>
