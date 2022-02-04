@@ -1,0 +1,38 @@
+// OPERADORES // 
+eq = equal
+ne = not equal
+gt = greater than
+gte = greater than or equal to
+lt = less than
+lte = less than or equal to
+in = in
+nin = not in
+
+
+-- Ex: Achar preço maior ou igual a 10
+.find({ price: { $gte: 10 } })
+
+-- Ex: Achar preço entre 10 e 20
+.find({ price: { $gt:10, $lt: 20 } })
+
+// OPERADORES LÓGICOS //
+or()
+and()
+
+--Ex: Achar titulo = "A" ou preço = 10
+.find()
+.or([ { titulo:"A" }, { price: 10 } ])
+
+// EXPRESSÕES REGULARES //
+
+--EX: Retorna todos os 'author' que começam com a palavra Hugo
+.find({ author: /^Hugo/ })
+
+--EX: Retorna todos os 'author' que termina com a palavra Santos
+.find({ author: /Santos$/ })
+
+--EX: Contém a palavra Santos em qualquer lugar
+.find({ author: /.*Santos*./ })
+
+Para case insentitive, colocar 'i' após a contrabarra
+--EX: .find({ author: /Santos$/i })

@@ -1,10 +1,5 @@
-const Joi = require("joi");
 const express = require("express");
-const { validate } = require("joi/lib/types/lazy");
-const app = express();
-
-// Habilitando requisições POST
-app.use(express.json());
+const router = express.Router();
 
 const courses = [
   { id: 1, name: "Course 1" },
@@ -12,17 +7,12 @@ const courses = [
   { id: 3, name: "Course 3" },
 ];
 
-// Requisição GET
-app.get("/", (req, res) => {
-  res.send("Hello world");
-});
-
-app.get("/api/courses", (req, res) => {
+router.get("/", (req, res) => {
   res.send(courses);
 });
 
 // Teste com parametros
-app.get("/api/courses/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   const course = courses.find((c) => {
     if (c.id === parseInt(req.params.id)) return c;
   });
@@ -31,7 +21,7 @@ app.get("/api/courses/:id", (req, res) => {
 });
 
 // Requisição POST
-app.post("/api/courses", (req, res) => {
+router.post("/", (req, res) => {
   // Valida o curso baseado no schema definido
   const { error } = validateCourse(req.body);
   if (error) return res.status(400).send(result.error.details[0].message);
@@ -45,7 +35,7 @@ app.post("/api/courses", (req, res) => {
 });
 
 // Requisição PUT
-app.put("/api/courses/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   // Checa se o ID enviado na url existe
   const course = courses.find((c) => c.id === parseInt(req.params.id));
   // Se não, envia alerta 404 e mensagem
@@ -61,7 +51,7 @@ app.put("/api/courses/:id", (req, res) => {
 });
 
 // Requisição DELETE
-app.delete("/api/courses/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   // Checa se o ID enviado na url existe
   const course = courses.find((c) => c.id === parseInt(req.params.id));
   // Se não, envia alerta 404 e mensagem
@@ -72,17 +62,4 @@ app.delete("/api/courses/:id", (req, res) => {
   res.send(courses);
 });
 
-// Definindo porta e iniciando servidor
-const port = process.env.PORT || 7777;
-app.listen(port, () => {
-  console.log(`Servidor aberto na porta: ${port}`);
-});
-
-// Função para validar curso baseado no schema de Joi
-function validateCourse(course) {
-  const schema = {
-    name: Joi.string().min(3).required(),
-  };
-
-  return Joi.validate(course, schema);
-}
+module.exports = router;
