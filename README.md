@@ -16,6 +16,6 @@ Minha lista de estudos detalhada [aqui](https://thoracic-nyala-418.notion.site/L
 ## :warning: Instruções extras abaixo
 
 - Para os estudos com `PHP`, utilize um servidor, como por exemplo o XAMPP
-- Pada os estudos com `Node.js`, utilize o comando `npm install` para baixar os pacotes npm
+- Para os estudos com `Node.js`, utilize o comando `npm install` para baixar os pacotes npm
 
 ## :smile: Obrigado por visitar meu projeto
