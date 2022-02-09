@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-    <h2>Minha lista de estudos detalhada<a href="https://thoracic-nyala-418.notion.site/Lista-de-Estudos-1acba06fe09c48b19cd1123b30380601"> aqui</a><h2>
+    <h2>Minha lista de estudos detalhada<a href="https://thoracic-nyala-418.notion.site/Lista-de-Estudos-1acba06fe09c48b19cd1123b30380601"> aqui</a></h2>
 </div>
 
 1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
