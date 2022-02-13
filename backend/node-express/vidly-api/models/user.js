@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
   isAdmin: Boolean,
 });
 
+// Inserindo método de genToken no modelo definido
 userSchema.methods.generateAuthToken = function () {
   const token = jwt.sign({ _id: this._id, isAdmin: this.isAdmin }, config.get("jwtPrivateKey"));
   return token;

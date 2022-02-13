@@ -1,6 +1,7 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
+// Definindo modelo Rental, que usa daddos de customer e movies
 const Rental = mongoose.model(
   "Rental",
   new mongoose.Schema({

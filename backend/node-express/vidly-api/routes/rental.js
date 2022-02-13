@@ -7,6 +7,7 @@ const Fawn = require("fawn");
 const express = require("express");
 const router = express.Router();
 
+// Inicializa Fawn, biblioteca para realizar transactions (2 ações que necessitam ser concluidas ambas ou falhar ambas, nada pela metade)
 Fawn.init(mongoose);
 
 router.get("/", async (req, res) => {
@@ -38,6 +39,7 @@ router.post("/", auth, async (req, res) => {
       dailyRentalRate: movie.dailyRentalRate,
     },
   });
+  // Utilizando fawn para salvar novo rental e atualizar qtd de filmes
   try {
     new Fawn.Task()
       .save("rentals", rental)

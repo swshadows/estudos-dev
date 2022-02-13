@@ -1,3 +1,4 @@
+// Rota de autenticação
 const auth = require("../middleware/auth");
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
@@ -7,6 +8,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 
+// Login
 router.post("/", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);

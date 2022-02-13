@@ -1,3 +1,4 @@
+// Rota de customers
 const auth = require("../middleware/auth");
 const { Customer, validate } = require("../models/customer");
 const express = require("express");

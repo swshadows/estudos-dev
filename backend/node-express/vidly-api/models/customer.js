@@ -1,6 +1,8 @@
+// Modelo de customer
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
+// Definindo customer
 const Customer = mongoose.model(
   "Customer",
   new mongoose.Schema({
@@ -23,6 +25,7 @@ const Customer = mongoose.model(
   })
 );
 
+// Validando customer com função Joi
 function validateCustomer(customer) {
   const schema = {
     name: Joi.string().min(5).max(50).required(),
