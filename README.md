@@ -1,4 +1,6 @@
-# _Repositório para estudos com tecnologias Fullstack_ :globe_with_meridians:
+# Estudos Fullstack
+
+> Repositório para estudos com tecnologias Fullstack :globe_with_meridians:
 
 <div align="center">
 
@@ -7,19 +9,25 @@
 </div>
 
 <div align="center">
-    <h2>Minha lista de estudos detalhada<a href="https://thoracic-nyala-418.notion.site/Lista-de-Estudos-1acba06fe09c48b19cd1123b30380601"> aqui</a></h2>
+    <img width=100 src="assets/stack.png">
 </div>
 
-1. Clone o repositório com o comando `git clone https://github.com/swshadows/estudos-fullstack.git`
-2. Explore o conteudo com um editor de código ou texto
+## Conteúdo
 
-- ou
+Legenda
 
-1. Aperte `.` (ponto final) no seu teclado e explore o código com o editor do Github
+- ✅ - Concluído
+- 🔁 - Estudando
+- ❌ - Não concluído
+- ⭕️ - Necessita revisão
 
-## :warning: Instruções extras abaixo
-
-- Para os estudos com `PHP`, utilize um servidor Apache, como por exemplo o XAMPP
-- Para os estudos com `Node.js`, utilize o comando `npm install` para baixar os pacotes npm e `npm <nome do arquivo raiz>` para iniciar a aplicação
-
-## :smile: Obrigado por visitar meu projeto
+| Assunto        | Status | Link                       |
+| :------------- | :----: | -------------------------- |
+| HTML           |   ✅   | [CLICK](src/html5/)        |
+| CSS            |   ✅   | [CLICK](src/css3/)         |
+| Bootstrap      |  ⭕️   | [CLICK](src/bootstrap/)    |
+| JavaScript     |   ✅   | [CLICK](src/javascript/)   |
+| jQuery         |   🔁   | [CLICK](src/jquery/)       |
+| React          |   ❌   | [CLICK](src/reactjs/)      |
+| PHP            |  ⭕️   | [CLICK](src/php/)          |
+| Node - Express |   ✅   | [CLICK](src/node-express/) |
