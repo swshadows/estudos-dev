@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Intermediário</title>
+    <style>
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+
+      span.oculttext {
+        display: none;
+      }
+
+      .hidebutton {
+        margin-top: 10px;
+        padding: 20px;
+        background-color: limegreen;
+        color: white;
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      #aga6 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 10px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body onload="loaded()">
+    <br />
+    <a href="desafios/intermediary_desafio.html">VER A PAGINA DE EXERCICIO</a>
+    <h2 style="font-size: 30px">Inspecione o elemento e cheque a origem da pagina HTML</h2>
+    <p>Testes com JavaScript Intermediário</p>
+    <!-- Clique em script.js abaixo para checar o código -->
+    <p class="green" id="p1">
+      Paragrafo para teste
+      <span class="oculttext">| Texto oculto |</span>
+    </p>
+    <p class="red" id="p2">Paragrafo para teste</p>
+    <p>Paragrafo para teste</p>
+
+    <!-- Testando DOMs -->
+    <h1 onclick="titleClick()">Clique aqui para disparar mensagem no console</h1>
+
+    <h1 onclick="this.style.color = 'red'">Clique para trocar a cor para vermelho</h1>
+
+    <!-- Testando funcionalidades com cliques -->
+    <hr />
+    <h1 class="textchange">Troque o nome desse texto escrevendo abaixo</h1>
+    <input id="textbox" type="text" oninput="trocarTexto(this)" />
+    <br />
+    <div onclick="hideh1()" class="hidebutton">CLIQUE AQUI PARA ESCONDER O TEXTO ACIMA</div>
+    <hr />
+    <script src="intermediary_script.js"></script>
+
+    <!-- Testando funcionalidades com mouseover e mouseout (usando EventListener)
+    Testando também funcionalidade do onload no body
+    Note que p script.js foi carregado acima ^^^^^^ mas o texto abaixo continua recebendo os comandos -->
+    <h6 id="aga6">Passe o mouse em cima para mudar esse texto</h6>
+
+    <!-- Testes com this -->
+    <h2>Clique nos "Titulos" abaixo para aumentar para maiusculo</h2>
+    <h2 id="title1">titulo 1</h2>
+    <h2 id="title2">titulo 2</h2>
+    <script>
+      // Testando a função com this para 2 h1
+      let t1 = document.getElementById("title1");
+      let t2 = document.getElementById("title2");
+
+      t1.onclick = maiusculo;
+      t2.onclick = maiusculo;
+
+      function maiusculo() {
+        this.innerHTML = this.innerHTML.toUpperCase();
+      }
+    </script>
+    <!-- Testando localStorage -->
+    <h1 id="nometitle"></h1>
+    <input style="width: 50%" placeholder="Experimente digitar texto aqui" type="text" oninput="atualizar(this)" />
+
+    <!-- Testando temporizadores -->
+    <h1 id="tempotest">Teste com setTimeout</h1>
+    <h1 id="tempotest1">Teste com setInterval</h1>
+    <input onclick="tempo()" type="submit" value="Iniciar/Mudar" />
+    <input onclick="stopInterval()" type="submit" value="Parar" />
+  </body>
+</html>

@@ -1,0 +1,289 @@
+/* Primeira linha do paragrafo muda */
+p.lorem-ipsum::first-line {
+  color: red;
+}
+
+/* O texto selecionado muda */
+p.lorem-ipsum::selection {
+  color: orange;
+  background-color: yellow;
+}
+
+/* A primeira letra do h2 muda */
+h2.title-test::first-letter {
+  color: blue;
+}
+
+/* Estilizando lista normalmente */
+li.li-elem {
+  list-style-type: none;
+}
+
+/* Editando conteudo que aparece antes do elemento da lista */
+li.li-elem::before {
+  content: "Before";
+  color: violet;
+}
+
+/* Editando conteudo que aparece depois do elemento da lista */
+li.li-elem::after {
+  content: "After";
+  color: green;
+}
+
+/* Selecionando a div após o header
+header > div seleciona a div que tem o header como pai
+header + div seleciona a div imediatamente após o header
+header ~ div seleciona todas as divs após o header
+
+*/
+
+header + div {
+  background-color: blue;
+}
+
+/* Seleciona todas as tags com o atributo width dentro */
+[width] {
+  background-color: #19ef21;
+}
+
+/* Seleciona somente a tag com o atributo width que seja igual a 900px dentro*/
+[width="900px"] {
+  background-color: crimson;
+}
+
+/* Seleciona todas as tags que tenham o atributo title contendo a palavra titulo
+title ^= t seleciona todas as tags que tenham o atributo title começando com a letra 't'
+title $= t seleciona todas as tags que tenham o atributo title terminando com a letra 't'
+title *= t seleciona todas as tags que tenham o atributo title com a letra 't' em qualquer lugar
+*/
+[title~="titulo"] {
+  background-color: aqua;
+}
+
+/* Somente o texto em foco ficará estilizado */
+input:focus {
+  color: red;
+}
+
+/* Somente o primeiro elemento da lista de tipo LI ficará estilizado */
+li.li-class:first-child {
+  color: blue;
+}
+
+/* Somente o primeiro elemento da lista de tipo LI ficará estilizado, independente se tiverem outros elementos de outros tipos acima dele */
+li.li-class1:first-of-type {
+  color: green;
+}
+
+/* Estiliza somente o nth elemento destacado entre parenteses (Nesse caso o 3º ficará estilizado) */
+li.li-class:nth-child(3) {
+  color: yellow;
+}
+
+/* Estiliza somente o nth elemento do tipo LI destacado entre parentese (Nesse caso o 2º elemento ficará estilizado) */
+li.li-class1:nth-of-type(2) {
+  color: violet;
+}
+
+/* Estiliza o elemento com o numero porém do ultimo até o primeiro */
+li.li-class:nth-last-child(2) {
+  color: #2782ff;
+}
+
+/* Elementos do tipo nth podem receber um n após o numero para indicar de 2 em 2
+Ex: nth-child(2n) (odd para impar e even para par também funciona)*/
+
+/* Testando calc */
+.container {
+  width: 100%;
+  height: 300px;
+}
+
+.first-div {
+  display: inline-block;
+  width: calc(100% - 300px);
+  height: 300px;
+  margin-right: -4px;
+  background-color: green;
+}
+
+.second-div {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin-right: -4px;
+  background-color: yellow;
+}
+
+/* Testando transform para rodar imagem */
+.img-transform {
+  margin: 60px 0;
+  transform: rotate(45deg);
+}
+
+/* Testando variáveis no CSS */
+:root {
+  --var-color-orange: #da882e;
+  --var-color-red: #ff0929;
+  --var-sqr-size: 200px;
+}
+
+.parag1 {
+  color: var(--var-color-orange);
+}
+
+.sqr1,
+.sqr2 {
+  width: var(--var-sqr-size);
+  height: var(--var-sqr-size);
+}
+
+.sqr1 {
+  background-color: var(--var-color-orange);
+}
+
+.sqr2 {
+  background-color: var(--var-color-red);
+}
+
+/* Testes com flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* align-content: space-between; */
+  background-color: gray;
+  height: 400px;
+  color: white;
+}
+
+.r1 {
+  /* order: 1; */
+  background-color: red;
+}
+
+.r2 {
+  flex-grow: 2;
+  /* align-self: flex-end; */
+  background-color: blue;
+}
+
+.r3 {
+  flex-shrink: 1;
+  background-color: green;
+}
+
+.rect {
+  width: 100px;
+  height: 100px;
+}
+
+/* Testes com grid */
+.grid-container {
+  height: 500px;
+  color: white;
+  display: grid;
+  padding: 20px;
+  background-color: gray;
+  grid-template: auto auto / auto auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.t1 {
+  background-color: red;
+}
+
+.t2 {
+  background-color: blue;
+}
+
+.t3 {
+  background-color: green;
+}
+
+.ract {
+  width: 100px;
+  height: 100px;
+}
+
+/* Grid area */
+.grid-container-area {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  color: white;
+  background-color: gray;
+
+  grid-template-areas:
+    "a2 a2 a2 a2 a2 a2"
+    "a1 a1 a3 a3 a3 a3"
+    "a1 a1 a5 a4 a4 a4"
+    "a6 a6 a6 a6 a6 a6";
+}
+
+.item1 {
+  grid-area: a1;
+}
+
+.item2 {
+  grid-area: a2;
+}
+
+.item3 {
+  grid-area: a3;
+}
+
+.item4 {
+  grid-area: a4;
+}
+
+.item5 {
+  grid-area: a5;
+}
+
+.item6 {
+  grid-area: a6;
+}
+
+/* Replicando grid container area com start/end */
+.grid-container-area-replicate {
+  margin-top: 10px;
+  padding: 10px;
+  display: grid;
+  color: white;
+  background-color: gray;
+  grid-template: auto auto auto auto / auto auto auto auto auto auto;
+}
+
+.itemm1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.itemm2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.itemm3 {
+  grid-column-end: span 4;
+}
+
+.itemm4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.itemm5 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.itemm6 {
+  grid-column-end: span 6;
+}

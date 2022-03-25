@@ -1,0 +1,40 @@
+/* Estilizando todo o corpo da página */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilizando titulo da pagina */
+#page-title {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+}
+
+/* Estilizando o teste de eventos */
+#event-test {
+  color: white;
+  background-color: black;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+
+/* Estilizando quadrado */
+.square,
+.square-callback,
+.square-chaining {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+/* Estilizando lista */
+#lista {
+  width: 50%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}

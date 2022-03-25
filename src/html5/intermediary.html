@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Intermediário</title>
+  </head>
+  <body>
+    <!-- Testes com forms -->
+    <h2>Testes com formulário (Pesquisa no Youtube)</h2>
+    <!-- GET mostra o código na barra URL -->
+    <form method="GET" action="http://www.youtube.com/results">
+      <!-- Area de texto -->
+      <input placeholder="Digite aqui sua pesquisa" type="text" name="search_query" />
+      <!-- Botão de enviar -->
+      <input type="submit" value="Pesquisar" />
+    </form>
+
+    <h2>Testes com formulário #2 - Login/Senha</h2>
+    <!-- POST nao mostra o código na barra URL, bom para senhas -->
+    <form method="POST" action="">
+      <input placeholder="Digite seu nome de usuário" type="text" name="usuario" />
+      <input placeholder="Digite sua senha" type="password" name="senha" />
+      <input type="submit" />
+    </form>
+
+    <h2>Testes com formulários #3 - Checkboxes e radios</h2>
+    <!-- Checkbox envia informações determinadas no campo value para o servidor -->
+    <form>
+      <p><strong>Selecione os cursos que se interessa</strong></p>
+      <input type="checkbox" name="curso" value="rn" /> React Native <input type="checkbox" name="curso" value="rjs" /> React JS <input type="checkbox" name="curso" value="njs" /> Node.js <input type="checkbox" name="curso" value="an" /> Angular
+      <p><strong>Selecione seu gênero</strong></p>
+      <input checked required type="radio" name="genero" value="m" /> Masculino <input type="radio" name="genero" value="f" /> Feminino
+      <input type="reset" value="Limpar dados" />
+      <input type="submit" value="Enviar formulário" />
+    </form>
+
+    <h2>Testes com formulários #4 - Selects</h2>
+    <form>
+      <p><strong>De onde você está preenchendo este formulário?</strong></p>
+      <select name="regiao">
+        <option value="n">Região Norte</option>
+        <option value="nd">Região Nordeste</option>
+        <option value="co">Região Centro-Oeste</option>
+        <option value="s">Região Sul</option>
+        <option selected value="sd">Região Sudeste</option>
+      </select>
+      <input type="submit" value="Enviar informações sobre região" />
+    </form>
+
+    <h2>Com size e multiple (Segure Ctrl)</h2>
+    <!-- Com size e multiple, para aumentar o tamanho e selecionar vários -->
+    <form>
+      <p><strong>De onde você está preenchendo este formulário?</strong></p>
+      <select name="regiao" size="5" multiple>
+        <option value="n">Região Norte</option>
+        <option value="nd">Região Nordeste</option>
+        <option value="co">Região Centro-Oeste</option>
+        <option value="s">Região Sul</option>
+        <option selected value="sd">Região Sudeste</option>
+      </select>
+      <input type="submit" value="Enviar informações sobre região" />
+    </form>
+
+    <h2>Testando formulario #5 - Textareas</h2>
+    <form>
+      <textarea placeholder="Digite aqui comentários adicionais" name="comment"></textarea>
+      <input type="submit" value="Enviar comentário" />
+    </form>
+  </body>
+</html>
