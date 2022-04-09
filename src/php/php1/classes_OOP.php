@@ -228,7 +228,7 @@ foreach ($objetos as $obj) {
 require('classes/classe1.php');
 require('classes/classe2.php');
 
-$class1 = new class2\MinhaClasse();
+$class1 = new \class2\MinhaClasse();
 echo $class1->testar() . "<br/>";
 
 // Injeção de dependência
