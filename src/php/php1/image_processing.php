@@ -62,7 +62,7 @@ imagecopyresampled(
     $finalX, // X inicial da imagem guia
     $finalY, // Y inicial da imagem guia
     0, // X inicial da imagem canvas
-    0, // Y inicial da imagem canvas 
+    0, // Y inicial da imagem canvas
     $finalW, // Width final
     $finalH, // Height final
     $originalW, // Width original
