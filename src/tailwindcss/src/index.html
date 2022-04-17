@@ -48,6 +48,9 @@
     <div class="float-left bg-red-400">Float left</div>
     <br />
 
+    <!-- Componente -->
+    <button class="btn-blue">Testando Componente</button>
+
     <!-- Overflow -->
     <div class="my-4 overflow-hidden h-10 bg-lime-300">
       <p>Testando overflow hidden</p>
@@ -183,6 +186,91 @@
       <div class="m-1 p-1 bg-green-400 lg:order-3">4</div>
       <div class="m-1 p-1 bg-green-400 lg:order-2">5</div>
       <div class="m-1 p-1 bg-green-400 lg:order-first">6</div>
+    </div>
+
+    <!-- Layout Grid -->
+    <div class="grid grid-cols-2 bg-green-100">
+      <div class="bg-green-400">1</div>
+      <div class="bg-green-400">2</div>
+      <div class="bg-green-400">3</div>
+      <div class="bg-green-400">4</div>
+    </div>
+
+    <!-- ? Exercício 7
+      Criar uma grid de 3 colunas com 9 itens, onde as colunas alternam entre cores
+    -->
+
+    <div class="grid grid-cols-3 bg-slate-100">
+      <div class="bg-slate-400 p-1 m-1">1</div>
+      <div class="bg-slate-200 p-1 m-1">2</div>
+      <div class="bg-slate-400 p-1 m-1">3</div>
+      <div class="bg-slate-400 p-1 m-1">4</div>
+      <div class="bg-slate-200 p-1 m-1">5</div>
+      <div class="bg-slate-400 p-1 m-1">6</div>
+      <div class="bg-slate-400 p-1 m-1">7</div>
+      <div class="bg-slate-200 p-1 m-1">8</div>
+      <div class="bg-slate-400 p-1 m-1">9</div>
+    </div>
+
+    <!-- Colspan -->
+    <div class="grid grid-cols-4 bg-green-200">
+      <div class="col-span-4 text-center bg-green-500">Menu</div>
+      <div class="col-span-1 bg-green-300 text-center">Barra lateral esquerda</div>
+      <div class="col-span-2 text-justify p-2">Texto dummy</div>
+      <div class="col-span-1 bg-green-300 text-center">Barra lateral direita</div>
+      <div class="col-span-4 bg-green-500 text-center">Rodapé</div>
+    </div>
+
+    <!-- Exercício 8
+      Criar layout de site, com header, sidebar e conteudo usando grid-col-4
+    -->
+    <div class="grid grid-cols-4 my-10">
+      <div class="bg-red-500 col-span-4">HEADER DA PÁGINA</div>
+      <div class="bg-red-300 col-span-1">
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>Contato</li>
+          <li>Redes Sociais</li>
+        </ul>
+      </div>
+      <div class="bg-red-400 col-span-3">
+        CONTEÚDO DA PÁGINA Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium incidunt sunt est? Provident deserunt, assumenda, impedit atque error porro repudiandae doloribus dolore rem temporibus est, ipsum laborum iure tempora facere. Nisi minima beatae alias, non velit molestiae
+        reprehenderit voluptate maiores unde minus debitis veniam, error culpa esse harum. Perferendis necessitatibus ea, optio cupiditate natus ab aliquam? Aliquam dolore deserunt maxime.
+      </div>
+    </div>
+
+    <!-- Grid-Row -->
+    <div class="grid grid-rows-2 grid-flow-col bg-red-900">
+      <div class="bg-red-300">1</div>
+      <div class="bg-red-300">2</div>
+      <div class="bg-red-300">3</div>
+      <div class="bg-red-300">4</div>
+      <div class="bg-red-300">5</div>
+    </div>
+
+    <!-- Gap -->
+    <div class="grid grid-rows-2 grid-flow-col bg-cyan-900 gap-3">
+      <div class="bg-cyan-300">1</div>
+      <div class="bg-cyan-300">2</div>
+      <div class="bg-cyan-300">3</div>
+      <div class="bg-cyan-300">4</div>
+      <div class="bg-cyan-300">5</div>
+    </div>
+
+    <!-- ? Exercício 9
+      Inserir um grid de 2 colunas e 4 itens com gap = 6
+    -->
+    <div class="grid grid-cols-2 bg-blue-100 gap-6">
+      <div class="bg-blue-400 p-1">1</div>
+      <div class="bg-blue-400 p-1">2</div>
+      <div class="bg-blue-400 p-1">3</div>
+      <div class="bg-blue-400 p-1">4</div>
+    </div>
+
+    <div class="mt-10 bg-slate-900">
+      <p class="text-black">Trocando cor preta no theme</p>
+      <p class="text-new-color">Testando cor extendida no theme</p>
     </div>
   </body>
 </html>
