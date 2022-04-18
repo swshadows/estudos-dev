@@ -28,7 +28,7 @@ Legenda
 | Bootstrap      |   ✅   | [CLICK](src/bootstrap/)    |
 | TailwindCSS    |   🔁   | [CLICK](src/tailwindcss//) |
 | JavaScript     |   ✅   | [CLICK](src/javascript/)   |
-| jQuery         |   🔁   | [CLICK](src/jquery/)       |
+| jQuery         |   ✅   | [CLICK](src/jquery/)       |
 | React          |   ❌   | [CLICK](src/reactjs/)      |
 | PHP            |   ✅   | [CLICK](src/php/)          |
 | Node - Express |   ✅   | [CLICK](src/node-express/) |
