@@ -30,5 +30,5 @@ Legenda
 | JavaScript     |   ✅   | [CLICK](src/javascript/)   |
 | jQuery         |   ✅   | [CLICK](src/jquery/)       |
 | React          |   ❌   | [CLICK](src/reactjs/)      |
-| PHP            |   ✅   | [CLICK](src/php/)          |
-| Node - Express |   ✅   | [CLICK](src/node-express/) |
+| PHP            |  ⭕️   | [CLICK](src/php/)          |
+| Node - Express |  ⭕️   | [CLICK](src/node-express/) |

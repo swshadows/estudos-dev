@@ -6,6 +6,9 @@ module.exports = {
         "new-color": "#30ff04",
         black: "#ff00ff",
       },
+      fontFamily: {
+        arial: "Arial",
+      },
     },
   },
   plugins: [],
