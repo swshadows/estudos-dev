@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         arial: "Arial",
       },
+
+      backgroundImage: {
+        "test-back": "url('../assets/bg.bmp')",
+      },
     },
   },
   plugins: [],
