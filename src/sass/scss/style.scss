@@ -1,0 +1,91 @@
+@import "colors";
+$black: #999;
+$purple: #6b32a8;
+
+@mixin test-mixin {
+  font-size: 40px;
+  padding: 50px;
+  letter-spacing: 30px;
+  background-color: red;
+}
+
+@mixin color-mixin($color) {
+  color: $color;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+div {
+  background-color: $black;
+  a {
+    color: pink;
+  }
+}
+
+.test-purple {
+  background-color: $purple;
+  color: $black;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.button-red {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  transition: 200ms all;
+  &:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: crimson;
+  }
+}
+
+.test-ampersand {
+  text: {
+    align: center;
+    decoration: underline;
+  }
+}
+
+.test-mixin {
+  @include test-mixin;
+  @include color-mixin(#84e);
+}
+
+.test-spread {
+  @include box-shadow(20px 20px 0 0 #000, 30px 30px 0 0 #999);
+}
+
+.test-mobile {
+  font-size: 5em;
+  @include mobile {
+    font-size: 2em;
+  }
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+%placeholder {
+  letter-spacing: 10px;
+}
+
+.button-error {
+  @extend .error;
+  @extend %placeholder;
+  padding: 20px;
+  width: 200px;
+}

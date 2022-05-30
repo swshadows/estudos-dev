@@ -25,10 +25,11 @@ Legenda
 | :------------- | :----: | -------------------------- |
 | HTML           |   ✅   | [CLICK](src/html5/)        |
 | CSS            |   ✅   | [CLICK](src/css3/)         |
+| Sass           |   ✅   | [CLICK](src/sass/)         |
 | Bootstrap      |   ✅   | [CLICK](src/bootstrap/)    |
 | TailwindCSS    |   ✅   | [CLICK](src/tailwindcss//) |
 | JavaScript     |   ✅   | [CLICK](src/javascript/)   |
 | jQuery         |   ✅   | [CLICK](src/jquery/)       |
 | React          |   ❌   | [CLICK](src/reactjs/)      |
-| PHP            |   ✅   | [CLICK](src/php/)          |
+| PHP            |  ⭕️   | [CLICK](src/php/)          |
 | Node - Express |   ✅   | [CLICK](src/node-express/) |
