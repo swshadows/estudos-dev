@@ -89,3 +89,83 @@ div {
   padding: 20px;
   width: 200px;
 }
+
+.test-op {
+  width: 20px + 50;
+}
+
+$tema: dark;
+$color: orange;
+
+@if $tema == dark {
+  $color: black;
+} @else if $tema == light {
+  $color: white;
+}
+
+@mixin sizes($device) {
+  @if $device > 500px {
+    @media screen and (min-width: 500px) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+}
+
+div {
+  width: 100%;
+  @include sizes(400px) {
+    width: 50%;
+  }
+}
+
+.func-button {
+  $color: #ee12ed;
+  background-color: $color;
+  &:hover {
+    background-color: darken($color, 20%);
+  }
+}
+
+div.func-transp {
+  background-color: #000;
+  p {
+    background-color: transparentize(#000, 0.5);
+  }
+}
+
+div.func-round {
+  width: round(400px - 15.239382px);
+}
+
+@function halfPercent($size) {
+  @return ($size / 2) * 1%;
+}
+
+div.half {
+  width: halfPercent(50);
+}
+
+@for $i from 1 through 6 {
+  .item-#{$i} {
+    width: 400px + $i * 100;
+  }
+}
+
+$i: 0;
+@while $i < 5 {
+  .card-#{$i} {
+    width: 200px + $i * 50;
+  }
+  $i: $i + 1;
+}
+
+$list: facebook instagram snapchat;
+@each $item in $list {
+  .picture-#{$item} {
+    background-image: url("../assets/#{$item}.png");
+  }
+}

@@ -71,4 +71,95 @@ div a {
   width: 200px;
 }
 
+.test-op {
+  width: 70px;
+}
+
+div {
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  div {
+    width: 50%;
+  }
+}
+
+.func-button {
+  background-color: #ee12ed;
+}
+.func-button:hover {
+  background-color: #900a8f;
+}
+
+div.func-transp {
+  background-color: #000;
+}
+div.func-transp p {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.func-round {
+  width: 385px;
+}
+
+div.half {
+  width: 25%;
+}
+
+.item-1 {
+  width: 500px;
+}
+
+.item-2 {
+  width: 600px;
+}
+
+.item-3 {
+  width: 700px;
+}
+
+.item-4 {
+  width: 800px;
+}
+
+.item-5 {
+  width: 900px;
+}
+
+.item-6 {
+  width: 1000px;
+}
+
+.card-0 {
+  width: 200px;
+}
+
+.card-1 {
+  width: 250px;
+}
+
+.card-2 {
+  width: 300px;
+}
+
+.card-3 {
+  width: 350px;
+}
+
+.card-4 {
+  width: 400px;
+}
+
+.picture-facebook {
+  background-image: url("../assets/facebook.png");
+}
+
+.picture-instagram {
+  background-image: url("../assets/instagram.png");
+}
+
+.picture-snapchat {
+  background-image: url("../assets/snapchat.png");
+}
+
 /*# sourceMappingURL=style.css.map */
