@@ -16,20 +16,21 @@
 
 Legenda
 
-- ✅ - Concluído
-- 🔁 - Estudando
+- ✔ - Concluído
+- ⌛ - Estudando
 - ❌ - Não concluído
 - ⭕️ - Necessita revisão
+- ♻ - Revisando
 
 | Assunto        | Status | Link                       |
 | :------------- | :----: | -------------------------- |
-| HTML           |   ✅   | [CLICK](src/html5/)        |
-| CSS            |   ✅   | [CLICK](src/css3/)         |
-| Sass           |   ✅   | [CLICK](src/sass/)         |
-| Bootstrap      |   ✅   | [CLICK](src/bootstrap/)    |
-| TailwindCSS    |   ✅   | [CLICK](src/tailwindcss//) |
-| JavaScript     |   ✅   | [CLICK](src/javascript/)   |
-| jQuery         |   ✅   | [CLICK](src/jquery/)       |
+| HTML           |   ✔    | [CLICK](src/html5/)        |
+| CSS            |   ✔    | [CLICK](src/css3/)         |
+| Sass           |   ✔    | [CLICK](src/sass/)         |
+| Bootstrap      |   ✔    | [CLICK](src/bootstrap/)    |
+| TailwindCSS    |   ✔    | [CLICK](src/tailwindcss//) |
+| JavaScript     |   ✔    | [CLICK](src/javascript/)   |
+| jQuery         |   ✔    | [CLICK](src/jquery/)       |
 | React          |   ❌   | [CLICK](src/reactjs/)      |
 | PHP            |  ⭕️   | [CLICK](src/php/)          |
-| Node - Express |   ✅   | [CLICK](src/node-express/) |
+| Node - Express |   ♻    | [CLICK](src/node-express/) |
