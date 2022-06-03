@@ -85,3 +85,14 @@ knex
   .catch((err) => {
     console.log(err);
   });
+
+knex
+  .select("employees.name as Employee, projects.name as Project")
+  .table("employees")
+  .innerJoin("projects", "projects.id", "employees.fk_project")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

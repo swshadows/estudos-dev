@@ -13,6 +13,11 @@ const jwtsecret = "12345678"; //Colocando no código somente para aprendizado
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
+app.locals = {
+  adminName: "@swshadows",
+  menuItems: ["home", "about", "me"],
+};
+
 app.use(
   session({
     secret: "secret",
