@@ -2,10 +2,22 @@ const express = require("express");
 const app = express();
 const Question = require("./models/Question");
 
+const session = require("express-session");
+
 const connection = require("./database/db");
+const checkLogin = require("./middleware");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+
+app.use(
+  session({
+    secret: "secret",
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24, // 1 dia para expirar
+    },
+  })
+);
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -25,7 +37,7 @@ app.get("/index", (req, res) => {
   res.render("index", { products });
 });
 
-app.get("/nome/:nome", (req, res) => {
+app.get("/nome/:nome", checkLogin, (req, res) => {
   const name = req.params.nome;
   res.send(`Olá, ${name}`);
 });
@@ -57,6 +69,18 @@ app.get("/list/:id", (req, res) => {
   Question.findOne({ raw: true, where: { id: req.params.id } }).then((question) => {
     if (question) res.render("question", { question });
     else res.redirect("/");
+  });
+});
+
+app.post("/update", (req, res) => {
+  Question.update({ title: req.body.title, description: req.body.description }, { where: { id: req.body.id } }).then(() => {
+    res.redirect("/");
+  });
+});
+
+app.post("/delete", (req, res) => {
+  Question.destroy({ where: { id: req.body.id } }).then(() => {
+    res.redirect("/");
   });
 });
 
