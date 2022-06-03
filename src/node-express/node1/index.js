@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
 const Question = require("./models/Question");
+const jwt = require("jsonwebtoken");
 
 const session = require("express-session");
 
 const connection = require("./database/db");
-const checkLogin = require("./middleware");
+const checkLogin = require("./middleware/middleware");
+
+const jwtsecret = "12345678"; //Colocando no código somente para aprendizado
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -82,6 +85,42 @@ app.post("/delete", (req, res) => {
   Question.destroy({ where: { id: req.body.id } }).then(() => {
     res.redirect("/");
   });
+});
+
+// JWT Tests
+app.post("/login", (req, res) => {
+  const { email, password } = req.body;
+  if (!email) return res.status(400).json({ err: "Bad Request" });
+  if (!password) return res.status(400).json({ err: "Bad Request" });
+
+  jwt.sign({ email: email }, jwtsecret, { expiresIn: "48h" }, (err, token) => {
+    if (err) return res.status(400).json({ err: "Falha interna" });
+    res.status(200).json({ token: token });
+  });
+});
+
+// HATEOAS
+app.get("/listEv", (req, res) => {
+  const HATEOAS = [
+    {
+      href: "http://localhost:8080/question/0",
+      method: "GET",
+      rel: "get_question",
+    },
+    {
+      href: "http://localhost:8080/question/0",
+      method: "DELETE",
+      rel: "delete_question",
+    },
+  ];
+  const questions = question
+    .findAll()
+    .then((questions) => {
+      res.status(200).json({ questions: questions, _links: HATEOAS });
+    })
+    .catch((err) => {
+      if (err) res.json({ error: err });
+    });
 });
 
 app.listen(3000, (err) => {
