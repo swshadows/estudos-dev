@@ -37,7 +37,7 @@ Legenda
 | TailwindCSS    |   ✔    | [CLICK](src/tailwindcss//) |
 | JavaScript     |   ✔    | [CLICK](src/javascript/)   |
 | jQuery         |   ✔    | [CLICK](src/jquery/)       |
-| PHP            |   ♻    | [CLICK](src/php/)          |
+| PHP            |   ✔    | [CLICK](src/php/)          |
 | Node - Express |   ✔    | [CLICK](src/node-express/) |
 
 Pastas `.outofdate` nos tópicos acima contém estudos desatualizados
