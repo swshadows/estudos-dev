@@ -36,6 +36,7 @@ Legenda
 | Bootstrap      |   ✔    | [CLICK](src/bootstrap/)    |
 | TailwindCSS    |   ✔    | [CLICK](src/tailwindcss//) |
 | JavaScript     |   ✔    | [CLICK](src/javascript/)   |
+| TypeScript     |   ⌛   | [CLICK](src/typescript/)   |
 | jQuery         |   ✔    | [CLICK](src/jquery/)       |
 | PHP            |   ✔    | [CLICK](src/php/)          |
 | Node - Express |   ✔    | [CLICK](src/node-express/) |
