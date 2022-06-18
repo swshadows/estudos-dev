@@ -40,5 +40,6 @@ Legenda
 | jQuery         |   ✔    | [CLICK](src/jquery/)       |
 | PHP            |   ✔    | [CLICK](src/php/)          |
 | Node - Express |   ✔    | [CLICK](src/node-express/) |
+| MariaDB        |   ✔    | [CLICK](src/mariadb/)      |
 
 Pastas `.outofdate` nos tópicos acima contém estudos desatualizados
