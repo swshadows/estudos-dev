@@ -20,12 +20,12 @@ const shirt: Product = {
 showProductDetails(shirt);
 
 // Readonly
-interface Car {
+interface Car3 {
   brand: string;
   readonly wheels: number;
 }
 
-const Fusca: Car = {
+const Fusca: Car3 = {
   brand: "Ford",
   wheels: 4, // Não poderá ser alterado
 };

@@ -1,1 +1,2 @@
-live-server .
+live-server . &
+tsc --watch
