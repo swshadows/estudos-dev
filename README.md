@@ -28,18 +28,19 @@ Legenda
 - ⭕️ - Necessita revisão
 - ♻ - Revisando
 
-| Assunto        | Status | Link                       |
-| :------------- | :----: | -------------------------- |
-| HTML           |   ✔    | [CLICK](src/html5/)        |
-| CSS            |   ✔    | [CLICK](src/css3/)         |
-| Sass           |   ✔    | [CLICK](src/sass/)         |
-| Bootstrap      |   ✔    | [CLICK](src/bootstrap/)    |
-| TailwindCSS    |   ✔    | [CLICK](src/tailwindcss//) |
-| JavaScript     |   ✔    | [CLICK](src/javascript/)   |
-| TypeScript     |   ✔    | [CLICK](src/typescript/)   |
-| jQuery         |   ✔    | [CLICK](src/jquery/)       |
-| PHP            |   ✔    | [CLICK](src/php/)          |
-| Node - Express |   ✔    | [CLICK](src/node-express/) |
-| MariaDB        |   ✔    | [CLICK](src/mariadb/)      |
+| Assunto        | Status |
+| :------------- | :----: |
+| HTML           |   ✔    |
+| CSS            |   ✔    |
+| Sass           |   ✔    |
+| Bootstrap      |   ✔    |
+| TailwindCSS    |   ✔    |
+| JavaScript     |   ✔    |
+| TypeScript     |   ✔    |
+| jQuery         |   ✔    |
+| PHP            |   ♻    |
+| Node - Express |   ✔    |
+| MariaDB        |   ✔    |
+| MongoDB        |   ✔    |
 
 Pastas `.outofdate` nos tópicos acima contém estudos desatualizados
