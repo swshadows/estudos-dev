@@ -44,5 +44,6 @@ Legenda
 | Node - Express |     ✔     | [Node & Express Dump](src/node-express/) |
 | MariaDB        |     ✔     | [MariaDB Dump](src/mariadb/)             |
 | MongoDB        |     ✔     | [MongoDB Dump](src/mongodb/)             |
+| LaTeX          |     ✔     | [LaTeX Dump](src/latex/)                 |
 
 Pastas `.outofdate` nos tópicos acima contém estudos desatualizados

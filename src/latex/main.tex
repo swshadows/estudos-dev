@@ -1,0 +1,121 @@
+% Importando defs.tex
+\input{defs.tex}
+
+\begin{document}
+% Quebra de Linha
+Testando nova linha \newline
+Outra linha \\
+Mais uma linha\\
+
+% Divisão
+\part{Part}
+\section{Sessão}
+\subsection{Subsessão}
+\subsubsection{Subsubsessão}
+\par Novo parágrafo
+
+%Tipo da fonte
+\textrm{Texto em romano} \\
+\texttt{Texto em máquina de escrever} \\
+\textit{Texto em itálico} \\
+\textbf{Texto em negrito} \\
+\textsf{Texto sem serifa} 
+
+% Tamanho da fonte
+\tiny{Tiny} \\
+\scriptsize{Script} \\
+\footnotesize{Footnote} \\
+\small{Small} \\
+\normalsize{Normal} \\
+\large{large} \\
+\Large{Large} \\
+\LARGE{LARGE} \\
+\huge{huge} \\
+\Huge{Huge} \\
+\normalsize
+
+% Alinhamento
+\begin{flushright}
+    Texto a direita
+\end{flushright}
+
+\begin{flushleft}
+    Texto a esquerda
+\end{flushleft}
+
+\begin{center}
+    Texto centralizado
+\end{center}
+% Listas e Tabelas
+% Lista Não Ordenada
+\begin{itemize}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+    \item Item 4
+\end{itemize}
+
+%Lista Ordenada
+\begin{enumerate}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+    \item Item 4
+\end{enumerate}
+% Quebrando página
+\newpage
+
+% Tabela
+\begin{table}[hb]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Nomes & Matriculas \\
+        \hline
+        José & 123456-7 \\
+        \hline
+    \end{tabular}
+    \caption{Matriculas dos alunos}
+\end{table}
+
+%Matemática
+Teorema de Pitágoras
+\begin{equation}
+    h^2 = c_1^2 + c_2^2
+\end{equation}
+
+$$x = \frac{-b \pm \sqrt{\Delta}}{2a}$$
+com $\Delta = b^2 - 4ac$
+
+% Operadores
+$2 \cdot 2 = 4$
+$2 \times 2 = 4$
+
+$2 : 2 = 1$
+$\frac{2}{2} = 1$
+
+$2^{2y}$
+
+$\sqrt[3]{8}=2$
+
+% Imagens
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.1\textwidth]{assets/dog.png}
+    \caption{Emoji de cachorro}
+    \label{ref_dog}
+\end{figure}
+
+% Referências
+\par Podemos ver a imagem de cachorro na Figura \ref{ref_dog}
+
+% Bibliografia
+De acordo com \cite{ibge1993} e \cite{abntex2-wiki-como-customizar}...
+
+\bibliography{bibliografia}
+\nocite{abntex2cite}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\end{document}
