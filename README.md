@@ -39,11 +39,13 @@ Legenda
 | TailwindCSS    |     ✔     | [TailwindCSS Dump](src/tailwindcss/)     |
 | JavaScript     |     ✔     | [Javascript Dump](src/javascript/)       |
 | TypeScript     |     ✔     | [Typescript Dump](src/typescript/)       |
+| React.js       |     ✔     | [React.js Dump](src/reactjs/)            |
 | jQuery         |     ✔     | [jQuery Dump](src/jquery/)               |
-| PHP            |     ♻     | [PHP Dump](src/php/)                     |
+| PHP            |     ✔     | [PHP Dump](src/php/)                     |
 | Node - Express |     ✔     | [Node & Express Dump](src/node-express/) |
 | MariaDB        |     ✔     | [MariaDB Dump](src/mariadb/)             |
 | MongoDB        |     ✔     | [MongoDB Dump](src/mongodb/)             |
 | LaTeX          |     ✔     | [LaTeX Dump](src/latex/)                 |
+| Shell          |     ✔     | [Shell Dump](src/shell/)                 |
 
 Pastas `.outofdate` nos tópicos acima contém estudos desatualizados
