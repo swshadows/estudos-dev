@@ -11,6 +11,8 @@ import ConditionalRender from "./components/ConditionalRender";
 import PropTest from "./components/PropTest";
 import PropChildren from "./components/PropChildren";
 import UserDetails from "./components/UserDetails";
+import ChallengeCSS from "./components/ChallengeCSS";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <PropTest name="Calebe" />
       <PropChildren title="Testando children">Conteúdo interno</PropChildren>
       <UserDetails />
+      <ChallengeCSS nome="Celta" ano="2005" km="23300" />
+      <Form />
     </div>
   );
 }
