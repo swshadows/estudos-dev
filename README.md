@@ -10,14 +10,6 @@
 
 <div align="center">
     <img width=100 src="assets/coffee.png">
-    <br>
-     <a href="https://swshadows.notion.site/Estudos-Cafeina-e2adaa82bd7a424fac0a20e61897a3f3">
-        <img src="https://img.shields.io/badge/Notion-informational?logo=notion&style=for-the-badge&color=141414&labelColor=000000">
-        <br>
-        <small>Anotações no Notion</small>
-    </a>
-    <br>
-    <small>As anotações contem conteúdo mais detalhado (e até mais conteúdo) do que o repositório</small>
 </div>
 
 ## Conteúdo
@@ -39,7 +31,7 @@ Legenda
 | TailwindCSS    |     ✔     | [TailwindCSS Dump](src/tailwindcss/)     |
 | JavaScript     |     ✔     | [Javascript Dump](src/javascript/)       |
 | TypeScript     |     ✔     | [Typescript Dump](src/typescript/)       |
-| React.js       |     ✔     | [React.js Dump](src/reactjs/)            |
+| Vue.js         |    ⌛     | [Vue.js Dump](src/vuejs/)                |
 | jQuery         |     ✔     | [jQuery Dump](src/jquery/)               |
 | PHP            |     ✔     | [PHP Dump](src/php/)                     |
 | Node - Express |     ✔     | [Node & Express Dump](src/node-express/) |

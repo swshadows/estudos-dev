@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuejs</title>
+  </head>
+  <body>
+    <div id="app">
+      <a v-bind:href="link">{{link}}</a>
+      <p :class="color" class="color">Teste de classes</p>
+      <p :class="comprou ? 'sim' : 'nao'">Comprou? {{comprou}}</p>
+      <button @click="toggle">Toggle</button>
+      <a href="#intern" @click.prevent="toggle">Link interno com prevent</a>
+      <a href="#intern" @click.prevent.once="toggle">Link interno com prevent.once</a>
+      <a href="#intern" @click.once="toggle">Link interno com once</a>
+      <input type="text" @keyup="changeInput" placeholder="@keyup" />
+      <p>{{textInput}}</p>
+      <p @mousemove="handleMouse">Posição do mouse: {{mouse.x}}</p>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@2.5.17"></script>
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        link: "https://www.google.com",
+        color: "azul",
+        comprou: false,
+        textInput: "",
+        mouse: "",
+      },
+      methods: {
+        toggle() {
+          this.comprou = !this.comprou;
+        },
+        handle(event) {
+          console.log(event.key);
+        },
+        changeInput(e) {
+          this.textInput += e.key;
+        },
+        handleMouse(e) {
+          this.mouse = e;
+        },
+      },
+    });
+  </script>
+</html>

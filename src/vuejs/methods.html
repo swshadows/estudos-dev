@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuejs</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{number}}</p>
+      <button @click="increment">Aumentar</button>
+      <button @click="viewEvent">Ver Evento</button>
+    </div>
+
+    <div id="exercicio">
+      <!-- Puxar dados de uma APi e exibir somente alguns -->
+      <div>
+        <p>Cat facts: {{data.text}}</p>
+      </div>
+      <button @click="fetchAPI">Puxar dados</button>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@2.5.17"></script>
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        number: 0,
+      },
+      methods: {
+        increment() {
+          this.number++;
+        },
+        viewEvent(e) {
+          console.log(e);
+        },
+      },
+    });
+
+    const exec = new Vue({
+      el: "#exercicio",
+      data: {
+        data: {},
+      },
+      methods: {
+        fetchAPI() {
+          fetch("https://cat-fact.herokuapp.com/facts")
+            .then((response) => response.json())
+            .then((response) => (this.data = response[0]))
+            .catch((err) => console.error(err));
+        },
+      },
+    });
+  </script>
+</html>
